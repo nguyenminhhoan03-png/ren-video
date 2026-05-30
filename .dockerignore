@@ -1,0 +1,17 @@
+# Ignore local cache and outputs
+output/
+stock_videos/
+_frame_samples/
+chapters/
+render/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.gitignore
+.dockerignore
+Dockerfile
+run_gui.bat
+venv/
+.venv/
