@@ -1334,6 +1334,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
 
 
 def main() -> None:
+    import shutil
     args = build_arg_parser().parse_args()
     script_path = Path(args.script)
     output_dir = Path(args.output_dir)
@@ -1341,43 +1342,128 @@ def main() -> None:
     # Check for Pexels API key from arg or environment variable
     pexels_key = args.pexels_api_key or os.environ.get("PEXELS_API_KEY", "")
 
-    voice_path = Path(args.voice) if args.voice else output_dir / "voice.mp3"
-    if args.generate_voice:
-        print(f"Generating voice to {voice_path} using voice '{args.tts_voice}' ...")
-        generate_voice_mp3(
-            script_path,
-            voice_path,
-            args.tts_voice,
-            rate=args.tts_rate,
-            workers=args.tts_workers,
-            max_chars=args.tts_chunk_size,
-            use_cache=not args.tts_no_cache,
-            polish=not args.tts_no_polish,
-        )
+    if script_path.is_dir():
+        # Batch mode: process all .txt files in the directory
+        txt_files = sorted(list(script_path.glob("*.txt")))
+        if not txt_files:
+            print(f"No .txt files found in directory: {script_path}")
+            return
 
-    if not voice_path.exists():
-        raise FileNotFoundError(f"Voice file not found: {voice_path}")
+        done_dir = script_path / "done"
+        done_dir.mkdir(exist_ok=True)
 
-    config = ProjectConfig(
-        project_name=args.project_name,
-        output_dir=output_dir,
-        script_path=script_path,
-        voice_path=voice_path,
-        resolution=args.resolution,
-        pexels_api_key=pexels_key,
-    )
-    pipeline = VideoPipeline(config)
-    plan = pipeline.generate_plan()
-    chapters = [pipeline.hydrate_chapter(ch) for ch in plan["chapters"]]
-    pipeline.export_chapter_markers(chapters)
-    pipeline.write_manifest(chapters)
-    slides = pipeline.generate_slides(chapters)
-    if args.render_video:
-        final_video = pipeline.render_video(chapters, slides)
-        print(f"Rendered video: {final_video}")
+        print(f"Found {len(txt_files)} script files to process.")
+        for idx, file in enumerate(txt_files, start=1):
+            name = file.stem
+            file_output_dir = output_dir / name
+            final_video = file_output_dir / f"{name}.mp4"
+
+            # Check if video already exists to avoid re-rendering
+            if final_video.exists() and final_video.stat().st_size > 1000:
+                print(f"[{idx}/{len(txt_files)}] Video for '{file.name}' already exists. Skipping...")
+                try:
+                    shutil.move(str(file), str(done_dir / file.name))
+                except Exception as e:
+                    print(f"Failed to move '{file.name}' to done: {e}")
+                continue
+
+            print(f"\n==================================================")
+            print(f"[{idx}/{len(txt_files)}] Processing script: {file.name}")
+            print(f"==================================================")
+
+            file_output_dir.mkdir(parents=True, exist_ok=True)
+            voice_path = file_output_dir / "voice.mp3"
+
+            try:
+                if args.generate_voice:
+                    print(f"Generating voice to {voice_path} using voice '{args.tts_voice}' ...")
+                    generate_voice_mp3(
+                        file,
+                        voice_path,
+                        args.tts_voice,
+                        rate=args.tts_rate,
+                        workers=args.tts_workers,
+                        max_chars=args.tts_chunk_size,
+                        use_cache=not args.tts_no_cache,
+                        polish=not args.tts_no_polish,
+                    )
+
+                if not voice_path.exists():
+                    print(f"Error: Voice file not found for '{file.name}', skipping.")
+                    continue
+
+                config = ProjectConfig(
+                    project_name=name,
+                    output_dir=file_output_dir,
+                    script_path=file,
+                    voice_path=voice_path,
+                    resolution=args.resolution,
+                    pexels_api_key=pexels_key,
+                )
+                pipeline = VideoPipeline(config)
+                plan = pipeline.generate_plan()
+                chapters = [pipeline.hydrate_chapter(ch) for ch in plan["chapters"]]
+                pipeline.export_chapter_markers(chapters)
+                pipeline.write_manifest(chapters)
+                slides = pipeline.generate_slides(chapters)
+                
+                if args.render_video:
+                    rendered_file = pipeline.render_video(chapters, slides)
+                    print(f"Rendered video successfully: {rendered_file}")
+                    
+                    # Move script to done folder
+                    try:
+                        shutil.move(str(file), str(done_dir / file.name))
+                        print(f"Moved script '{file.name}' to '{done_dir.name}/'")
+                    except Exception as e:
+                        print(f"Failed to move '{file.name}' to done: {e}")
+                else:
+                    print(f"Generated {len(slides)} scene assets in {file_output_dir}")
+                    print(f"Voice narration ready at: {voice_path}")
+
+            except Exception as e:
+                print(f"Error processing script '{file.name}': {e}")
+                import traceback
+                traceback.print_exc()
     else:
-        print(f"Generated {len(slides)} scene assets in {output_dir}")
-        print(f"Voice narration ready at: {voice_path}")
+        # Single file mode (original behavior)
+        voice_path = Path(args.voice) if args.voice else output_dir / "voice.mp3"
+        if args.generate_voice:
+            print(f"Generating voice to {voice_path} using voice '{args.tts_voice}' ...")
+            generate_voice_mp3(
+                script_path,
+                voice_path,
+                args.tts_voice,
+                rate=args.tts_rate,
+                workers=args.tts_workers,
+                max_chars=args.tts_chunk_size,
+                use_cache=not args.tts_no_cache,
+                polish=not args.tts_no_polish,
+            )
+
+        if not voice_path.exists():
+            raise FileNotFoundError(f"Voice file not found: {voice_path}")
+
+        config = ProjectConfig(
+            project_name=args.project_name,
+            output_dir=output_dir,
+            script_path=script_path,
+            voice_path=voice_path,
+            resolution=args.resolution,
+            pexels_api_key=pexels_key,
+        )
+        pipeline = VideoPipeline(config)
+        plan = pipeline.generate_plan()
+        chapters = [pipeline.hydrate_chapter(ch) for ch in plan["chapters"]]
+        pipeline.export_chapter_markers(chapters)
+        pipeline.write_manifest(chapters)
+        slides = pipeline.generate_slides(chapters)
+        if args.render_video:
+            final_video = pipeline.render_video(chapters, slides)
+            print(f"Rendered video: {final_video}")
+        else:
+            print(f"Generated {len(slides)} scene assets in {output_dir}")
+            print(f"Voice narration ready at: {voice_path}")
 
 
 if __name__ == "__main__":
