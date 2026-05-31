@@ -1079,6 +1079,26 @@ def _split_tts_chunks(text: str, max_chars: int = 360) -> List[str]:
     return [chunk for chunk in chunks if chunk.strip()]
 
 
+def _run_async(coro):
+    """Safely run an async coroutine, cleaning up pending tasks to avoid loop-closed warnings."""
+    loop = asyncio.new_event_loop()
+    try:
+        asyncio.set_event_loop(loop)
+        return loop.run_until_complete(coro)
+    finally:
+        try:
+            pending = asyncio.all_tasks(loop)
+            if pending:
+                for task in pending:
+                    task.cancel()
+                loop.run_until_complete(asyncio.gather(*pending, return_exceptions=True))
+            loop.run_until_complete(loop.shutdown_asyncgens())
+        except Exception:
+            pass
+        finally:
+            loop.close()
+
+
 def _ensure_valid_voice(voice: str) -> str:
     choices = get_supported_voice_choices()
     requested = (voice or "").strip()
@@ -1089,7 +1109,7 @@ def _generate_voice_chunk(chunk: str, chunk_file: Path, voice: str, rate: str = 
     last_error: Exception | None = None
     for attempt in range(retries + 1):
         try:
-            asyncio.run(_edge_tts_to_mp3(chunk, chunk_file, voice, rate=rate))
+            _run_async(_edge_tts_to_mp3(chunk, chunk_file, voice, rate=rate))
             if chunk_file.exists() and chunk_file.stat().st_size > 0:
                 return
             raise RuntimeError("Edge-TTS produced an empty file")
@@ -1114,7 +1134,7 @@ def _get_runtime_vi_voices() -> List[str]:
     try:
         import edge_tts
 
-        voices = asyncio.run(edge_tts.list_voices())
+        voices = _run_async(edge_tts.list_voices())
         names = [v.get("ShortName", "") for v in voices if isinstance(v, dict)]
         vi = [n for n in names if n.startswith("vi-VN-")]
         # Keep stable order but unique values.
