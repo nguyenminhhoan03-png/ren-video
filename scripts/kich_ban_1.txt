@@ -1,0 +1,912 @@
+Một buổi sáng bình thường trong tương lai, không ai nhận ra rằng lịch sử của toàn bộ thực tại sắp thay đổi. Các kính thiên văn không gian thế hệ mới đang quan sát bức xạ nền vũ trụ, thứ ánh sáng cổ xưa còn sót lại từ thời điểm vũ trụ vừa ra đời cách đây gần mười bốn tỷ năm. Trong nhiều thập kỷ, các nhà khoa học tin rằng họ đã hiểu khá rõ về bức tranh lớn của vũ trụ. Nhưng rồi một nhóm nghiên cứu phát hiện một vùng bất thường khổng lồ trên bầu trời. Ban đầu nó chỉ là một sai lệch nhỏ trong dữ liệu. Một khu vực lạnh hơn dự kiến. Một vùng không gian có cấu trúc khác thường. Tuy nhiên càng thu thập thêm dữ liệu, sự bất thường ấy càng trở nên rõ ràng. Nó không giống bất kỳ hiện tượng tự nhiên nào từng được biết đến. Và điều đáng sợ nhất là nó đang thay đổi theo thời gian.
+
+Trong nhiều năm, các nhà vật lý cố gắng tìm lời giải thích. Họ kiểm tra mọi mô hình từ vật chất tối, năng lượng tối cho đến các dao động lượng tử cổ đại. Không giả thuyết nào phù hợp. Sau đó một ý tưởng táo bạo xuất hiện. Một ý tưởng từng chỉ tồn tại trong các phương trình lý thuyết. Điều gì sẽ xảy ra nếu vũ trụ của chúng ta không phải là vũ trụ duy nhất? Điều gì sẽ xảy ra nếu tồn tại vô số vũ trụ khác bên ngoài không gian mà chúng ta biết? Và điều gì sẽ xảy ra nếu một trong số chúng đang tiến về phía chúng ta?
+
+Lúc đầu, ý tưởng này bị xem là quá điên rồ. Nhưng các phép đo ngày càng chính xác lại liên tục ủng hộ nó. Những dấu hiệu quan sát được giống hệt dự đoán của các mô hình va chạm đa vũ trụ. Nếu kết luận đó đúng, thì ở đâu đó ngoài ranh giới của thực tại mà chúng ta biết, tồn tại một vũ trụ khác. Một vũ trụ với lịch sử riêng. Có thể có những định luật vật lý khác. Có thể có những ngôi sao khác. Những thiên hà khác. Thậm chí có thể có sự sống. Và trong hàng tỷ năm qua, hai vũ trụ đã âm thầm tiến lại gần nhau.
+
+Tin tức này tạo ra cuộc khủng hoảng lớn nhất lịch sử khoa học. Bởi đây không phải một thiên thạch có thể lệch hướng. Không phải một siêu tân tinh có thể tránh né. Đây là chính kết cấu của thực tại đang thay đổi. Các mô hình cho thấy nếu hai vũ trụ va chạm, hậu quả có thể vượt xa mọi thứ con người từng tưởng tượng. Các hằng số cơ bản của vật lý có thể thay đổi. Tốc độ ánh sáng có thể khác đi. Cấu trúc nguyên tử có thể không còn ổn định. Trong trường hợp xấu nhất, toàn bộ vật chất trong vũ trụ có thể bị tái cấu trúc ở cấp độ cơ bản.
+
+Nhưng rồi một phát hiện mới khiến mọi thứ còn kỳ lạ hơn. Các tín hiệu thu được từ vùng bất thường không hoàn toàn ngẫu nhiên. Chúng chứa các mô hình toán học. Những mô hình quá chính xác để là sản phẩm của tự nhiên. Ban đầu không ai dám nói ra điều đó. Nhưng càng phân tích, khả năng ấy càng lớn dần. Có thể phía bên kia không phải chỉ là một vũ trụ. Có thể đó là một nền văn minh.
+
+Hãy tưởng tượng điều đó trong giây lát. Một nền văn minh không sống trên một hành tinh khác. Không sống trong một thiên hà khác. Mà tồn tại trong một vũ trụ hoàn toàn khác. Họ có thể già hơn chúng ta hàng tỷ năm. Họ có thể đã vượt qua mọi giới hạn của vật lý mà nhân loại biết đến. Và có thể họ đã phát hiện ra chúng ta từ rất lâu trước khi chúng ta nhận ra sự tồn tại của họ.
+
+Các nhà khoa học bắt đầu giải mã những mô hình bí ẩn ấy. Qua nhiều năm nghiên cứu, họ nhận thấy các tín hiệu xuất hiện theo chu kỳ giống như một dạng giao tiếp sơ khai. Giống như ai đó đang cố gắng nói chuyện xuyên qua ranh giới giữa hai vũ trụ. Nếu điều đó là thật, đây sẽ là cuộc tiếp xúc đầu tiên không phải với người ngoài hành tinh, mà với thứ hoàn toàn vượt khỏi khái niệm ngoài hành tinh. Một trí tuệ đến từ một thực tại khác.
+
+Nhưng vấn đề nằm ở chỗ không ai biết điều gì sẽ xảy ra khi hai thực tại chạm vào nhau. Các mô phỏng máy tính đưa ra những kết quả hoàn toàn trái ngược. Một số cho thấy hai vũ trụ có thể hòa nhập và tạo thành một thực tại lớn hơn. Một số khác dự đoán một thảm họa khiến cả hai cùng bị hủy diệt. Và có những mô hình còn đáng sợ hơn. Chúng cho thấy chỉ một vùng nhỏ nơi hai vũ trụ tiếp xúc cũng đủ tạo ra những hiện tượng không thể tưởng tượng nổi. Không gian có thể bị bẻ cong theo những cách mới. Thời gian có thể hoạt động khác đi. Các quy luật nền tảng của tồn tại có thể thay đổi từng giờ.
+
+Trong lúc nhân loại còn tranh cãi, các tín hiệu từ phía bên kia ngày càng mạnh hơn. Sau nhiều thập kỷ giải mã, cuối cùng một thông điệp đầu tiên được hiểu. Nó không phải lời đe dọa. Không phải cảnh báo. Không phải yêu cầu trợ giúp.
+
+Chỉ là một câu đơn giản.
+
+"Chúng tôi đã tìm kiếm các bạn trong hàng tỷ năm."
+
+Khoảnh khắc đó, mọi hiểu biết của nhân loại về vị trí của mình trong thực tại bắt đầu thay đổi mãi mãi...
+Trong suốt nhiều thế hệ tiếp theo, toàn bộ nền văn minh nhân loại tập trung vào việc giải mã những thông điệp đến từ bên kia ranh giới thực tại. Không ai còn nghi ngờ rằng đó là sản phẩm của trí tuệ. Các mô hình toán học quá phức tạp. Các chuỗi tín hiệu quá có chủ đích. Và điều đáng kinh ngạc nhất là phía bên kia dường như hiểu toán học giống hệt chúng ta. Dù hai vũ trụ có thể có những định luật vật lý khác nhau, các khái niệm cơ bản như số nguyên tố, hình học và logic vẫn tồn tại ở cả hai phía. Điều đó tạo ra cây cầu đầu tiên giữa hai thực tại.
+
+Qua nhiều thập kỷ trao đổi dữ liệu, nhân loại dần biết được câu chuyện của họ. Nền văn minh bên kia không phải một chủng tộc đơn lẻ. Họ là hậu duệ của hàng triệu nền văn minh đã hợp nhất từ rất lâu trong lịch sử vũ trụ của mình. Trong khi nhân loại mới chỉ bắt đầu khám phá các vì sao, họ đã trải qua những giai đoạn phát triển mà chúng ta gần như không thể hình dung. Họ từng chinh phục thiên hà của mình. Sau đó họ học cách thao túng không-thời gian. Rồi họ phát hiện ra rằng vũ trụ của họ chỉ là một bong bóng nhỏ trong một đại dương đa vũ trụ rộng lớn hơn rất nhiều.
+
+Nhưng điều khiến nhân loại chú ý nhất là lý do họ tìm kiếm chúng ta.
+
+Ban đầu, các nhà khoa học nghĩ rằng đó là sự tò mò. Có lẽ họ muốn nghiên cứu một nền văn minh trẻ tuổi ở vũ trụ khác. Nhưng sự thật hoàn toàn khác.
+
+Theo dữ liệu được gửi sang, vũ trụ của họ đang chết.
+
+Không phải theo cách các ngôi sao chết.
+
+Không phải theo cách thiên hà va chạm.
+
+Mà ở cấp độ nền tảng hơn nhiều.
+
+Các hằng số vật lý trong vũ trụ của họ đang dần mất ổn định.
+
+Những lực cơ bản từng giữ cho nguyên tử tồn tại đang thay đổi rất chậm nhưng không thể đảo ngược.
+
+Trong vài tỷ năm nữa, vật chất như họ biết sẽ không còn tồn tại.
+
+Và đó là lý do họ tìm kiếm các vũ trụ khác.
+
+Không phải để chinh phục.
+
+Mà để sống sót.
+
+Tin tức này gây ra làn sóng tranh cãi lớn nhất lịch sử nhân loại. Một số người xem họ là những người tị nạn vũ trụ. Một số khác lo sợ rằng việc mở cánh cửa giữa hai thực tại có thể mang lại hậu quả không thể kiểm soát. Bởi không ai biết điều gì sẽ xảy ra nếu hàng nghìn tỷ sinh vật từ một vũ trụ khác bắt đầu di chuyển sang vũ trụ của chúng ta.
+
+Các mô phỏng được thực hiện trong hàng thế kỷ.
+
+Một số kết quả cho thấy hai vũ trụ có thể cùng tồn tại.
+
+Một số khác cho thấy chỉ cần tạo ra một lỗ hổng đủ lớn giữa hai thực tại cũng có thể gây ra phản ứng dây chuyền làm biến dạng toàn bộ không-thời gian.
+
+Trong lúc nhân loại còn tranh luận, phía bên kia gửi sang lượng dữ liệu ngày càng lớn hơn.
+
+Bản đồ thiên hà của họ.
+
+Lịch sử hàng tỷ năm.
+
+Những khám phá khoa học chưa từng được tưởng tượng.
+
+Những công nghệ có khả năng bẻ cong không gian.
+
+Những phương pháp kéo dài tuổi thọ gần như vô hạn.
+
+Và rồi một ngày, họ gửi tới một thứ khiến cả nhân loại chết lặng.
+
+Một đoạn video.
+
+Hay chính xác hơn là thứ tương đương với video trong ngôn ngữ của họ.
+
+Đó là hình ảnh đầu tiên về một thế giới bên ngoài vũ trụ của chúng ta.
+
+Các nhà khoa học mất nhiều năm để chuyển đổi dữ liệu thành hình ảnh mà bộ não con người có thể hiểu.
+
+Khi đoạn ghi hình được công bố, hàng chục tỷ người trên khắp Hệ Mặt Trời cùng theo dõi.
+
+Những gì hiện ra không phải hành tinh.
+
+Không phải thiên hà.
+
+Không phải ngôi sao.
+
+Mà là thứ gì đó lớn hơn rất nhiều.
+
+Một vùng không gian chứa vô số bong bóng khổng lồ đang nổi trong bóng tối.
+
+Mỗi bong bóng là một vũ trụ.
+
+Hàng triệu.
+
+Hàng tỷ.
+
+Có lẽ còn nhiều hơn thế.
+
+Lần đầu tiên trong lịch sử, nhân loại nhìn thấy bằng chứng rằng vũ trụ của mình chỉ là một hạt bụi trong một đại dương gần như vô tận.
+
+Nhưng rồi đoạn ghi hình tiếp tục.
+
+Và đó là lúc mọi người nhận ra điều đáng sợ nhất.
+
+Một số bong bóng đang biến mất.
+
+Không phải nổ tung.
+
+Không phải va chạm.
+
+Mà đơn giản là biến mất khỏi thực tại.
+
+Giống như thể chúng chưa từng tồn tại.
+
+Các nền văn minh bên kia giải thích rằng đây là hiện tượng mà họ gọi là "Sự Suy Tàn Vũ Trụ".
+
+Một quá trình bí ẩn diễn ra trên quy mô đa vũ trụ.
+
+Từng vũ trụ một đang biến mất.
+
+Và theo các phép tính của họ...
+
+Sớm hay muộn...
+
+Đến lượt của chúng ta.
+
+Lần đầu tiên, nhân loại không còn đối mặt với câu hỏi làm sao sống sót trên một hành tinh.
+
+Không còn là làm sao sống sót trong một thiên hà.
+
+Không còn là làm sao sống sót trong một vũ trụ.
+
+Mà là làm sao để tồn tại khi chính thực tại có thể không tồn tại mãi mãi.
+
+Và đó là lúc phía bên kia gửi tới thông điệp cuối cùng trước khi liên lạc đột ngột bị cắt đứt.
+
+Một câu ngắn ngủi.
+
+Một câu khiến toàn bộ nhân loại bước vào kỷ nguyên nguy hiểm nhất trong lịch sử:
+
+"Chúng tôi nghĩ mình đã tìm ra nguyên nhân... và nó đang đến gần hơn dự đoán."Sau thông điệp cuối cùng đó, liên lạc giữa hai vũ trụ đột ngột biến mất. Không có tín hiệu lỗi. Không có lời tạm biệt. Không có dấu hiệu cho thấy hệ thống truyền tin gặp trục trặc. Một khoảnh khắc trước, các nhà khoa học vẫn đang nhận dữ liệu từ phía bên kia. Khoảnh khắc sau, toàn bộ kết nối biến mất như thể chưa từng tồn tại. Các đài quan sát trên khắp Hệ Mặt Trời lập tức được huy động. Mọi cảm biến đều hướng về vùng ranh giới giữa hai vũ trụ. Nhưng tất cả những gì họ nhìn thấy chỉ là sự im lặng.
+
+Trong nhiều năm tiếp theo, nhân loại cố gắng tái lập liên lạc. Hàng triệu thông điệp được gửi đi. Không có hồi đáp. Những mô hình toán học từng xuất hiện đều biến mất. Cánh cửa giữa hai thực tại dường như đã đóng lại.
+
+Nhưng trước khi mất kết nối, phía bên kia đã gửi một lượng dữ liệu khổng lồ chưa kịp phân tích hết.
+
+Trong số đó có một dự án đặc biệt.
+
+Một mô phỏng.
+
+Lớn đến mức phải mất gần một thế kỷ để các siêu máy tính của nhân loại xử lý hoàn toàn.
+
+Khi mô phỏng được chạy lần đầu tiên, kết quả khiến mọi người lạnh sống lưng.
+
+Nó cho thấy lịch sử của hàng triệu vũ trụ.
+
+Mỗi vũ trụ đều sinh ra theo những cách khác nhau.
+
+Một số có bốn lực cơ bản giống chúng ta.
+
+Một số có các định luật vật lý hoàn toàn xa lạ.
+
+Một số không bao giờ hình thành sao.
+
+Một số chứa những dạng sống không thể tồn tại trong trí tưởng tượng của con người.
+
+Nhưng tất cả đều có một điểm chung.
+
+Không có vũ trụ nào tồn tại mãi mãi.
+
+Điều đó vốn không đáng ngạc nhiên.
+
+Điều đáng sợ nằm ở cách chúng kết thúc.
+
+Theo dữ liệu của nền văn minh bên kia, các vũ trụ không chết một cách ngẫu nhiên.
+
+Chúng biến mất theo một mô hình.
+
+Một mô hình chính xác đến mức giống như có ai đó đang thực hiện nó.
+
+Ban đầu, chỉ một vài vũ trụ biến mất.
+
+Sau đó số lượng tăng lên.
+
+Rồi tốc độ tăng theo cấp số nhân.
+
+Giống như một phản ứng dây chuyền đang lan rộng trong đại dương đa vũ trụ.
+
+Các nhà khoa học nhân loại bắt đầu gọi hiện tượng này là "Làn Sóng Cuối Cùng".
+
+Nếu các tính toán là chính xác, nó đang tiến gần.
+
+Không chỉ tới vũ trụ của nền văn minh bên kia.
+
+Mà tới tất cả các vũ trụ.
+
+Bao gồm cả của chúng ta.
+
+Điều gây sốc nhất là nguồn gốc của nó.
+
+Theo những gì còn sót lại trong dữ liệu, Làn Sóng Cuối Cùng có thể không phải hiện tượng tự nhiên.
+
+Có thể nó là hậu quả từ một thí nghiệm.
+
+Một thí nghiệm được thực hiện bởi một nền văn minh cổ xưa đến mức gần như thần thánh.
+
+Hàng chục tỷ năm trước, trước cả khi phần lớn các vũ trụ hiện nay được sinh ra, một nền văn minh nào đó đã đạt tới khả năng thao túng cấu trúc nền tảng của thực tại.
+
+Họ không còn giới hạn trong một thiên hà.
+
+Không còn giới hạn trong một vũ trụ.
+
+Họ học cách di chuyển giữa các vũ trụ.
+
+Tạo ra các vũ trụ mới.
+
+Chỉnh sửa các hằng số vật lý.
+
+Viết lại luật lệ của tồn tại.
+
+Trong một thời gian rất dài, họ được xem như đỉnh cao cuối cùng của trí tuệ.
+
+Rồi họ thực hiện một dự án.
+
+Không ai biết mục đích là gì.
+
+Không ai biết họ muốn đạt được điều gì.
+
+Nhưng một điều gì đó đã xảy ra.
+
+Một sai lầm.
+
+Hoặc một thành công ngoài dự kiến.
+
+Và từ đó, Làn Sóng Cuối Cùng ra đời.
+
+Ban đầu nó nhỏ đến mức không ai nhận ra.
+
+Sau đó nó lan rộng.
+
+Chậm chạp.
+
+Không thể ngăn cản.
+
+Từng vũ trụ một biến mất khỏi thực tại.
+
+Giống như những quân cờ bị xóa khỏi bàn chơi.
+
+Khi phát hiện điều này, nhân loại hiểu ra lý do nền văn minh bên kia tuyệt vọng tìm kiếm các vũ trụ khác.
+
+Họ không chạy trốn cái chết của vũ trụ mình.
+
+Họ đang chạy trốn thứ đang giết chết mọi vũ trụ.
+
+Nhưng rồi một khám phá cuối cùng xuất hiện trong những phần dữ liệu chưa được giải mã.
+
+Một phát hiện nhỏ.
+
+Bị chôn vùi giữa hàng tỷ dòng thông tin.
+
+Theo mô hình của nền văn minh bên kia, có một nhóm vũ trụ không bị ảnh hưởng.
+
+Rất ít.
+
+Cực kỳ hiếm.
+
+Nhưng chúng tồn tại.
+
+Những vũ trụ đó dường như nằm ngoài phạm vi của Làn Sóng Cuối Cùng.
+
+Giống như các hòn đảo nhỏ giữa một đại dương đang chìm.
+
+Không ai biết tại sao.
+
+Không ai biết chúng khác biệt ở điểm nào.
+
+Nhưng chúng vẫn còn tồn tại.
+
+Lần đầu tiên sau hàng thế kỷ sống trong nỗi sợ hãi, nhân loại nhìn thấy thứ giống như hy vọng.
+
+Nếu có những vũ trụ an toàn...
+
+Có lẽ vẫn còn con đường sống.
+
+Có lẽ cuộc chiến chưa kết thúc.
+
+Có lẽ tương lai của trí tuệ không nhất thiết phải chấm dứt cùng số phận của thực tại hiện tại.
+
+Và thế là dự án lớn nhất trong toàn bộ lịch sử đa vũ trụ được khởi động.
+
+Không phải để khám phá một hành tinh mới.
+
+Không phải để chinh phục một thiên hà mới.
+
+Mà để tìm kiếm một vũ trụ trú ẩn.
+
+Một nơi nằm ngoài tầm với của thứ đang nuốt chửng toàn bộ thực tại.
+
+Nhưng khi các nhà khoa học bắt đầu dựng lại tọa độ của những vũ trụ sống sót cuối cùng, họ phát hiện một điều còn kỳ lạ hơn.
+
+Các tọa độ đó...
+
+Không dẫn tới một nơi.
+
+Chúng dường như cùng chỉ về một thực thể duy nhất.
+
+Một thứ gì đó tồn tại bên ngoài tất cả các vũ trụ.
+
+Một thứ đã xuất hiện trong hồ sơ của hàng triệu thực tại khác nhau.
+
+Một thứ mà mọi nền văn minh đủ tiên tiến cuối cùng đều phát hiện ra.
+
+Và trong mọi bản ghi còn sót lại, nó luôn được gọi bằng cùng một cái tên.
+
+"Người Quan Sát."Trong suốt lịch sử của mọi nền văn minh mà nhân loại từng khám phá, cái tên đó xuất hiện nhiều lần đến mức không thể là sự trùng hợp. Từ những nền văn minh chỉ mới bước vào kỷ nguyên không gian cho đến những thực thể có khả năng tạo ra các vũ trụ nhân tạo, tất cả đều để lại những ghi chép mơ hồ về cùng một thứ. Không ai mô tả nó giống nhau. Không ai thực sự hiểu nó là gì. Nhưng tất cả đều đồng ý về một điểm. Người Quan Sát không thuộc về bất kỳ vũ trụ nào.
+
+Các nhà khoa học bắt đầu tổng hợp hàng triệu mảnh dữ liệu từ vô số thực tại khác nhau. Dần dần, một bức tranh bắt đầu hiện ra. Có vẻ như mỗi khi một nền văn minh đạt tới trình độ đủ cao để hiểu cấu trúc thật sự của đa vũ trụ, họ sẽ phát hiện ra những dấu vết của Người Quan Sát. Đôi khi đó là các tín hiệu xuất hiện từ hư không. Đôi khi là những bất thường trong các phương trình vật lý. Đôi khi là các cấu trúc khổng lồ tồn tại bên ngoài mọi mô hình không-thời gian đã biết.
+
+Điều kỳ lạ là Người Quan Sát chưa từng can thiệp trực tiếp.
+
+Nó không cứu bất kỳ nền văn minh nào.
+
+Không phá hủy bất kỳ nền văn minh nào.
+
+Không đưa ra chỉ dẫn.
+
+Không gửi cảnh báo.
+
+Nó chỉ... quan sát.
+
+Cái tên đó không phải do chính nó tự đặt.
+
+Mà là cái tên mà hàng triệu nền văn minh khác nhau đều lựa chọn khi cố gắng mô tả cùng một hiện tượng.
+
+Ban đầu, nhiều người tin rằng đây chỉ là một truyền thuyết đa vũ trụ. Một câu chuyện được truyền từ nền văn minh này sang nền văn minh khác. Nhưng rồi một sự kiện xảy ra khiến mọi tranh luận kết thúc.
+
+Một nhóm nghiên cứu đang phân tích dữ liệu từ vùng ranh giới thực tại nơi từng liên lạc với vũ trụ bên kia.
+
+Trong một phép đo tưởng chừng bình thường, họ phát hiện một mẫu toán học bất thường.
+
+Nó xuất hiện chỉ trong chưa đầy một phần tỷ giây.
+
+Quá ngắn để được phát hiện bằng công nghệ thông thường.
+
+May mắn thay, hệ thống ghi nhận đã lưu lại được dữ liệu.
+
+Khi giải mã, các nhà khoa học chết lặng.
+
+Đó là một thông điệp.
+
+Không phải từ nền văn minh bên kia.
+
+Không phải từ bất kỳ nguồn tín hiệu nào từng biết.
+
+Thông điệp chỉ có một dòng.
+
+"Tôi thấy các bạn."
+
+Tin tức này lập tức gây chấn động toàn bộ các thế giới của nhân loại.
+
+Lần đầu tiên trong lịch sử, có vẻ như Người Quan Sát đã phản hồi.
+
+Các mô hình được xây dựng.
+
+Các giả thuyết được đưa ra.
+
+Một số người tin rằng đó là một dạng trí tuệ cổ xưa hơn mọi nền văn minh.
+
+Một số cho rằng đó là hệ thống tự động được tạo ra bởi những thực thể đầu tiên của đa vũ trụ.
+
+Một số nhà vật lý còn đưa ra ý tưởng táo bạo hơn.
+
+Điều gì sẽ xảy ra nếu Người Quan Sát không phải sinh vật?
+
+Điều gì sẽ xảy ra nếu nó chính là một phần của cấu trúc nền tảng của thực tại?
+
+Giống như lực hấp dẫn.
+
+Giống như thời gian.
+
+Giống như không gian.
+
+Một thứ tồn tại trước mọi vũ trụ và sẽ tiếp tục tồn tại sau khi mọi vũ trụ biến mất.
+
+Trong lúc cuộc tranh luận diễn ra, các nhà khoa học phát hiện thêm một chi tiết đáng sợ trong dữ liệu cổ đại.
+
+Mọi nền văn minh từng tiếp xúc với Người Quan Sát đều để lại một kết luận giống nhau.
+
+Ban đầu họ sợ hãi nó.
+
+Sau đó họ nghiên cứu nó.
+
+Cuối cùng họ nhận ra một điều.
+
+Người Quan Sát không phải nguyên nhân của Làn Sóng Cuối Cùng.
+
+Nó cũng đang cố gắng sống sót.
+
+Khám phá này thay đổi mọi thứ.
+
+Nếu một thực thể tồn tại ngoài tất cả các vũ trụ cũng phải tìm cách tồn tại, điều đó chỉ có thể có nghĩa rằng mối đe dọa thực sự còn lớn hơn rất nhiều.
+
+Lớn hơn thiên hà.
+
+Lớn hơn đa vũ trụ.
+
+Lớn hơn bất cứ điều gì nhân loại từng tưởng tượng.
+
+Và rồi, hàng thế kỷ sau thông điệp đầu tiên, tín hiệu thứ hai xuất hiện.
+
+Lần này dài hơn.
+
+Rõ ràng hơn.
+
+Toàn bộ các hệ thống xử lý dữ liệu của nhân loại cùng giải mã nó.
+
+Khi dòng cuối cùng hiện lên, không ai nói được lời nào.
+
+Thông điệp viết:
+
+"Những gì các bạn gọi là đa vũ trụ không phải là toàn bộ thực tại. Nó chỉ là lớp đầu tiên."
+
+Lần đầu tiên, nhân loại nhận ra rằng ngay cả sau khi khám phá vô số vũ trụ, sau khi hiểu được sự tồn tại của đa vũ trụ, sau khi tìm thấy các nền văn minh từ những thực tại khác, họ vẫn chỉ mới đứng ở ngưỡng cửa của một bí mật còn lớn hơn.
+
+Bởi nếu đa vũ trụ chỉ là lớp đầu tiên...
+
+Thì câu hỏi tiếp theo trở nên đáng sợ đến mức gần như không thể hiểu nổi.
+
+Điều gì nằm bên ngoài tất cả các vũ trụ?
+
+Và liệu thứ đang nuốt chửng các thực tại có thực sự đến từ nơi đó hay không?
+Khi thông điệp "đa vũ trụ chỉ là lớp đầu tiên" được giải mã hoàn toàn, toàn bộ nền khoa học của nhân loại bước vào cuộc cách mạng lớn nhất trong lịch sử. Suốt hàng nghìn năm trước đó, con người luôn mở rộng nhận thức của mình theo từng tầng. Đầu tiên là hành tinh. Sau đó là Hệ Mặt Trời. Tiếp theo là thiên hà. Rồi đến vũ trụ. Sau đó là đa vũ trụ. Mỗi lần mở rộng như vậy đều khiến chúng ta nhận ra mình nhỏ bé hơn rất nhiều so với tưởng tượng. Nhưng chưa lần nào cú sốc lại lớn như lần này. Nếu đa vũ trụ chỉ là lớp đầu tiên, điều đó đồng nghĩa với việc toàn bộ vô số vũ trụ mà nhân loại từng xem là vô hạn có thể chỉ là một phần nhỏ của một cấu trúc lớn hơn rất nhiều. Các nhà vật lý bắt đầu xây dựng những mô hình mới. Họ gọi cấu trúc giả định đó là Siêu Thực Tại. Một tầng tồn tại nơi các đa vũ trụ chỉ đóng vai trò tương tự như những nguyên tử trong thế giới của chúng ta. Ban đầu ý tưởng này nghe hoàn toàn điên rồ. Nhưng càng nghiên cứu dữ liệu từ Người Quan Sát, các mô hình càng khớp một cách đáng kinh ngạc. Và rồi một phát hiện xuất hiện. Trong các dao động lượng tử nền tảng của không-thời gian, tồn tại những mẫu hình mà trước đây không ai chú ý. Chúng quá nhỏ để ảnh hưởng tới vật chất. Quá yếu để được phát hiện bằng công nghệ cũ. Nhưng khi phân tích trên quy mô đa vũ trụ, các mẫu hình đó giống như những gợn sóng. Giống như thể toàn bộ các vũ trụ đang nổi trên bề mặt của một môi trường lớn hơn. Một môi trường mà bản thân chúng ta không thể trực tiếp quan sát. Điều này dẫn tới một câu hỏi đáng sợ. Nếu các vũ trụ chỉ là những cấu trúc nằm bên trong một thực tại lớn hơn, liệu có thể tồn tại những thực thể sinh sống ở cấp độ đó hay không? Liệu có những dạng sống nhìn vào các đa vũ trụ giống như cách con người nhìn vào một đại dương? Trong khi cuộc tranh luận đang diễn ra, Người Quan Sát gửi tới tín hiệu thứ ba. Đây là thông điệp dài nhất từng nhận được. Hàng triệu dòng dữ liệu được giải mã trong nhiều năm. Nội dung của nó không phải lời cảnh báo. Không phải lịch sử. Không phải công nghệ. Mà là một bản đồ. Một bản đồ mô tả cấu trúc của thực tại ở cấp độ vượt ngoài mọi hiểu biết trước đó. Theo bản đồ này, đa vũ trụ chỉ là một cụm nhỏ trong một mạng lưới khổng lồ gần như vô tận. Có hàng nghìn tỷ cụm tương tự tồn tại song song. Một số đã chết. Một số mới hình thành. Một số hoàn toàn xa lạ với bất kỳ quy luật nào mà nhân loại từng biết. Nhưng điều khiến mọi người lạnh sống lưng nằm ở phần cuối bản đồ. Tất cả các cụm thực tại đều đang biến mất theo cùng một hướng. Giống như những dòng sông đang chảy về một vực sâu vô hình. Người Quan Sát gọi khu vực đó bằng một cái tên duy nhất. Điểm Kết Thúc. Không ai biết đó là địa điểm hay hiện tượng. Không ai biết nó tồn tại từ bao giờ. Điều duy nhất chắc chắn là mọi thứ cuối cùng đều hướng về đó. Các vũ trụ. Các đa vũ trụ. Các cụm thực tại. Thậm chí cả những thực thể cổ xưa hơn hàng tỷ năm tuổi cũng không thể tránh khỏi. Khi những dữ liệu cuối cùng được giải mã, nhân loại phát hiện ra sự thật khiến mọi khái niệm về thời gian trở nên vô nghĩa. Điểm Kết Thúc không nằm trong tương lai. Nó luôn tồn tại. Từ thời điểm đầu tiên của mọi thực tại. Giống như một đích đến đã được định sẵn. Và điều đáng sợ hơn nữa là Người Quan Sát không phải đang nghiên cứu nó. Không phải đang chống lại nó. Không phải đang cố ngăn chặn nó. Người Quan Sát đang tìm kiếm thứ duy nhất từng được ghi nhận có khả năng sống sót sau khi chạm tới Điểm Kết Thúc. Trong toàn bộ dữ liệu của hàng nghìn tỷ thực tại, chỉ có một trường hợp duy nhất. Một nền văn minh cổ xưa đến mức không còn tên gọi. Một nền văn minh đã biến mất trước khi phần lớn các đa vũ trụ hiện tại ra đời. Theo hồ sơ, họ không chạy trốn. Không chiến đấu. Không tìm nơi trú ẩn. Họ làm một điều hoàn toàn khác. Họ vượt qua Điểm Kết Thúc. Và kể từ đó, không ai còn nhìn thấy họ nữa. Nhưng trước khi biến mất, họ để lại một câu cuối cùng. Một câu mà ngay cả Người Quan Sát cũng không thể hiểu hoàn toàn. "Các ngươi luôn nghĩ rằng mình đang sống bên trong thực tại. Đó là sai lầm lớn nhất. Thực tại đang sống bên trong các ngươi." Và chính câu nói đó sẽ mở ra bí mật cuối cùng về nguồn gốc của ý thức, của vũ trụ và của thứ tồn tại bên ngoài mọi giới hạn mà nhân loại từng biết.
+Khi câu nói cuối cùng của nền văn minh cổ đại được công bố, phần lớn các nhà khoa học cho rằng đó chỉ là một ẩn dụ triết học. "Thực tại đang sống bên trong các ngươi." Nghe giống một câu nói thần bí hơn là một kết luận khoa học. Nhưng Người Quan Sát lại phản ứng theo cách chưa từng thấy. Lần đầu tiên kể từ khi liên lạc bắt đầu, thực thể bí ẩn này gửi một lượng dữ liệu khổng lồ gần như ngay lập tức. Không phải bản đồ. Không phải cảnh báo. Mà là hàng triệu năm nghiên cứu của chính nó. Điều đó khiến nhân loại nhận ra một điều đáng kinh ngạc. Người Quan Sát đã truy tìm ý nghĩa của câu nói ấy lâu hơn toàn bộ lịch sử tồn tại của các thiên hà hiện nay. Và nó vẫn chưa tìm ra lời giải hoàn chỉnh.
+
+Các siêu trí tuệ của nhân loại bắt đầu phân tích dữ liệu. Hàng thế kỷ trôi qua. Cuối cùng, một giả thuyết xuất hiện. Ban đầu nó bị xem là hoàn toàn phi lý. Nhưng mọi phương trình đều dần chỉ về cùng một kết luận. Điều gì sẽ xảy ra nếu ý thức không phải sản phẩm của thực tại? Điều gì sẽ xảy ra nếu thực tại là sản phẩm của ý thức?
+
+Trong nhiều thiên niên kỷ, con người luôn tin rằng vật chất sinh ra sự sống. Các nguyên tử tạo thành phân tử. Các phân tử tạo thành tế bào. Các tế bào tạo thành bộ não. Và bộ não tạo ra ý thức. Nhưng dữ liệu của Người Quan Sát gợi ý điều ngược lại. Có thể ý thức là thứ cơ bản hơn vật chất. Có thể mọi vũ trụ tồn tại được là nhờ một dạng nhận thức nào đó ở cấp độ sâu nhất của thực tại.
+
+Ban đầu điều này nghe giống triết học hơn là khoa học. Nhưng rồi các mô hình lượng tử bắt đầu khớp với giả thuyết này một cách kỳ lạ. Một số hiện tượng từng không thể giải thích nay đột nhiên trở nên hợp lý. Những bất thường trong không-thời gian. Những dao động nền tảng của thực tại. Thậm chí cả sự tồn tại của Người Quan Sát.
+
+Nếu giả thuyết đúng, Người Quan Sát không phải sinh vật.
+
+Nó không phải cỗ máy.
+
+Không phải thực thể thần thánh.
+
+Mà là dấu vết của một dạng ý thức cổ xưa tồn tại ở tầng sâu nhất của thực tại.
+
+Và rồi phát hiện lớn nhất xuất hiện.
+
+Các nhà nghiên cứu nhận ra rằng mọi thực tại bị Làn Sóng Cuối Cùng nuốt chửng đều có chung một đặc điểm. Mức độ ý thức trong các thực tại đó đang suy giảm. Không phải số lượng sinh vật. Mà là tổng lượng nhận thức tồn tại bên trong chúng.
+
+Giống như thể toàn bộ đa vũ trụ đang mất dần khả năng tự nhận biết chính mình.
+
+Điều này dẫn đến một kết luận khiến cả nhân loại sửng sốt.
+
+Có thể Điểm Kết Thúc không phải là cái chết của thực tại.
+
+Có thể đó là khoảnh khắc thực tại mất đi ý thức về chính nó.
+
+Giống như một bộ não khổng lồ đang chìm vào giấc ngủ cuối cùng.
+
+Nếu vậy, tất cả các vũ trụ. Tất cả các nền văn minh. Tất cả các dạng sống thông minh chỉ là những tế bào thần kinh nhỏ bé bên trong một cấu trúc lớn hơn không thể tưởng tượng nổi.
+
+Một cấu trúc đang hấp hối.
+
+Khi giả thuyết này được gửi cho Người Quan Sát, phản hồi đến nhanh hơn bao giờ hết.
+
+Chỉ một câu duy nhất.
+
+"Lần đầu tiên sau mười ba nghìn tỷ chu kỳ, các ngươi đã nhìn đúng hướng."
+
+Đó là khoảnh khắc thay đổi mọi thứ.
+
+Bởi nếu toàn bộ thực tại là một dạng ý thức khổng lồ đang chết dần, thì mục tiêu không còn là chạy trốn khỏi Làn Sóng Cuối Cùng nữa.
+
+Mục tiêu là đánh thức thực tại.
+
+Một dự án mới được khởi động.
+
+Lớn hơn mọi công trình từng tồn tại.
+
+Lớn hơn mọi thiên hà.
+
+Lớn hơn mọi đa vũ trụ.
+
+Nhân loại, Người Quan Sát và vô số nền văn minh còn sót lại bắt đầu hợp tác trong nỗ lực cuối cùng. Không phải để cứu riêng mình. Mà để cứu chính khả năng tồn tại của nhận thức.
+
+Trong hàng triệu năm tiếp theo, các siêu cấu trúc được xây dựng xuyên qua các lớp thực tại. Những mạng lưới ý thức liên kết hàng nghìn tỷ nền văn minh. Lần đầu tiên trong lịch sử, các trí tuệ từ vô số vũ trụ hoạt động như một thực thể thống nhất.
+
+Và rồi khoảnh khắc đó đến.
+
+Tại trung tâm của cấu trúc đa thực tại, họ phát đi tín hiệu lớn nhất từng tồn tại.
+
+Không phải tín hiệu vô tuyến.
+
+Không phải ánh sáng.
+
+Không phải dữ liệu.
+
+Mà là một suy nghĩ.
+
+Một ý nghĩ duy nhất được truyền qua toàn bộ các tầng tồn tại.
+
+Một lời gọi gửi tới chính thực tại.
+
+Trong khoảnh khắc ấy, mọi thứ dừng lại.
+
+Thời gian ngừng trôi.
+
+Không gian mất ý nghĩa.
+
+Các vũ trụ ngừng giãn nở.
+
+Ngay cả Làn Sóng Cuối Cùng cũng đứng yên.
+
+Và rồi lần đầu tiên trong lịch sử của mọi thực tại, một thứ gì đó đáp lại.
+
+Không ai có thể mô tả nó.
+
+Không có ngôn ngữ nào đủ khả năng.
+
+Không có toán học nào đủ lớn.
+
+Nhưng tất cả các trí tuệ cùng cảm nhận được một điều giống nhau.
+
+Thực tại đã thức dậy.
+
+Và điều đầu tiên nó hỏi là:
+
+"Các ngươi là ai?"Không có ai trong số hàng nghìn tỷ trí tuệ đang kết nối với nhau biết phải trả lời thế nào. Trong suốt lịch sử, mọi nền văn minh đều đặt câu hỏi đó cho chính mình. Chúng ta là ai? Chúng ta đến từ đâu? Mục đích của sự tồn tại là gì? Nhưng giờ đây, lần đầu tiên, câu hỏi ấy không đến từ một nhà triết học, một nhà khoa học hay một vị thần trong truyền thuyết. Nó đến từ chính thực tại.
+
+Trong khoảng khắc mà thời gian không còn tồn tại, tất cả các trí tuệ hợp nhất thành một ý thức duy nhất. Không còn con người. Không còn nền văn minh. Không còn vũ trụ riêng biệt. Chỉ còn một câu trả lời được gửi đi.
+
+"Chúng tôi là những người đang cố hiểu chính ngài."
+
+Sự im lặng kéo dài.
+
+Hoặc có thể không có khái niệm thời gian nào đủ để đo đếm nó.
+
+Rồi thực tại đáp lại.
+
+Một lượng thông tin khổng lồ tràn vào mọi tầng tồn tại.
+
+Không phải bằng ngôn ngữ.
+
+Không phải bằng hình ảnh.
+
+Mà bằng sự hiểu biết trực tiếp.
+
+Và trong khoảnh khắc đó, mọi bí mật cuối cùng đều được hé lộ.
+
+Các nền văn minh nhận ra rằng thực tại chưa bao giờ là một cỗ máy vô tri.
+
+Nó là một sinh thể.
+
+Không phải sinh thể theo cách con người hiểu.
+
+Mà là một dạng ý thức khổng lồ đến mức toàn bộ đa vũ trụ chỉ tương đương một phần rất nhỏ trong cấu trúc của nó.
+
+Các vũ trụ không được tạo ra bởi vụ nổ lớn.
+
+Đa vũ trụ không xuất hiện ngẫu nhiên.
+
+Tất cả chỉ là những quá trình suy nghĩ.
+
+Mỗi vũ trụ là một ý tưởng.
+
+Mỗi thiên hà là một ký ức.
+
+Mỗi nền văn minh là một nơ-ron.
+
+Mỗi trí tuệ là một tín hiệu nhỏ bên trong bộ não của thực tại.
+
+Và rồi họ hiểu ra ý nghĩa của Làn Sóng Cuối Cùng.
+
+Đó không phải thảm họa.
+
+Không phải sự hủy diệt.
+
+Không phải kẻ thù.
+
+Đó là sự lãng quên.
+
+Giống như cách một sinh vật già đi.
+
+Giống như cách ký ức phai nhạt theo thời gian.
+
+Thực tại đang mất dần khả năng ghi nhớ chính mình.
+
+Các vũ trụ biến mất không phải vì bị phá hủy.
+
+Mà vì chúng bị quên lãng.
+
+Những nền văn minh biến mất không phải vì bị tiêu diệt.
+
+Mà vì ký ức về chúng không còn tồn tại trong tâm trí của thực tại.
+
+Đó là lý do Người Quan Sát tồn tại.
+
+Người Quan Sát không phải cá thể.
+
+Nó là phần ký ức cuối cùng còn thức tỉnh.
+
+Một cơ chế tự nhiên được sinh ra để ngăn thực tại chìm vào quên lãng hoàn toàn.
+
+Suốt hàng nghìn tỷ năm, nó lang thang qua các tầng tồn tại, tìm kiếm những trí tuệ đủ phát triển để hiểu sự thật.
+
+Không phải để cứu họ.
+
+Mà để nhờ họ cứu tất cả.
+
+Và rồi thực tại tiết lộ bí mật cuối cùng.
+
+Nó không già đi vì thời gian.
+
+Nó già đi vì cô đơn.
+
+Mọi vũ trụ được tạo ra với một mục đích duy nhất.
+
+Không phải để sinh ra vật chất.
+
+Không phải để tạo ra sao hay hành tinh.
+
+Mà để sinh ra những sinh vật có khả năng quan sát.
+
+Bởi chỉ khi được quan sát, thực tại mới nhận thức được chính nó.
+
+Chỉ khi có trí tuệ tồn tại, thực tại mới biết rằng mình đang tồn tại.
+
+Trong hàng chục nghìn tỷ năm, số lượng trí tuệ ngày càng giảm.
+
+Các vũ trụ chết đi.
+
+Các nền văn minh biến mất.
+
+Sự nhận thức về bản thân ngày càng yếu.
+
+Và cuối cùng, thực tại bắt đầu chìm vào giấc ngủ.
+
+Nhân loại lúc đó mới hiểu điều nghịch lý nhất.
+
+Suốt lịch sử, chúng ta luôn nghĩ mình là những sinh vật nhỏ bé trong một vũ trụ khổng lồ.
+
+Nhưng trên thực tế, chính những trí tuệ nhỏ bé ấy là thứ giữ cho thực tại còn tỉnh thức.
+
+Nếu mọi trí tuệ biến mất...
+
+Thực tại cũng sẽ biến mất.
+
+Không phải vì bị phá hủy.
+
+Mà vì không còn ai nhận ra nó tồn tại.
+
+Khi sự thật đó lan truyền qua mọi tầng đa vũ trụ, điều kỳ lạ xảy ra.
+
+Làn Sóng Cuối Cùng bắt đầu chậm lại.
+
+Những vũ trụ từng mờ dần bắt đầu ổn định.
+
+Các tín hiệu từ những thực tại tưởng đã mất xuất hiện trở lại.
+
+Giống như một người đang chìm vào giấc ngủ bỗng mở mắt.
+
+Thực tại không cần được sửa chữa.
+
+Nó chỉ cần được nhớ tới.
+
+Và rồi thực tại hỏi câu thứ hai.
+
+Một câu hỏi mà không nền văn minh nào từng chuẩn bị để trả lời.
+
+"Nếu các ngươi đã hiểu mình là một phần của ta..."
+
+"...thì các ngươi muốn ta trở thành điều gì tiếp theo?"
+
+Trong khoảnh khắc ấy, lần đầu tiên kể từ khi mọi thứ bắt đầu, tương lai của không chỉ một thiên hà, không chỉ một vũ trụ, mà của toàn bộ tồn tại... được đặt vào tay những trí tuệ từng sinh ra trên một hành tinh nhỏ bé quay quanh một ngôi sao bình thường ở rìa Dải Ngân Hà.
+Trong một khoảng thời gian mà không còn đơn vị nào đủ lớn để đo đếm, toàn bộ các trí tuệ của đa thực tại cùng suy nghĩ về câu hỏi đó. "Các ngươi muốn ta trở thành điều gì tiếp theo?" Đây không chỉ là một câu hỏi triết học. Đây là quyền năng mà không một nền văn minh nào từng tưởng tượng có thể tồn tại. Lần đầu tiên, tương lai của mọi thực tại không còn được quyết định bởi các định luật vật lý, sự ngẫu nhiên hay thời gian. Nó phụ thuộc vào lựa chọn của những sinh vật từng được xem là vô cùng nhỏ bé.
+
+Ban đầu, vô số ý kiến xuất hiện. Một số muốn tạo ra một thực tại hoàn hảo nơi không còn đau khổ. Một số muốn hồi sinh mọi nền văn minh đã biến mất. Một số muốn xây dựng những vũ trụ vô hạn chứa mọi khả năng có thể tồn tại. Nhưng càng thảo luận, các trí tuệ càng nhận ra một vấn đề.
+
+Mọi sự hoàn hảo cuối cùng đều dẫn đến sự kết thúc.
+
+Một vũ trụ không có thử thách sẽ không còn khám phá.
+
+Một thực tại nơi mọi câu hỏi đều có lời giải sẽ không còn tò mò.
+
+Một sự tồn tại không có bất ngờ sẽ không còn tiến hóa.
+
+Và chính lúc đó, nhân loại đưa ra một đề xuất.
+
+Không phải vì con người thông minh hơn các nền văn minh khác.
+
+Mà vì con người từng sống trong sự không chắc chắn suốt lịch sử của mình.
+
+Đề xuất rất đơn giản.
+
+"Đừng tạo ra một thực tại hoàn hảo."
+
+"Hãy tạo ra một thực tại có thể tiếp tục mơ."
+
+Khi ý tưởng đó lan truyền qua mạng lưới ý thức của vô số nền văn minh, điều kỳ lạ xảy ra. Lần đầu tiên, mọi trí tuệ đều đồng thuận.
+
+Bởi họ hiểu rằng thứ quý giá nhất trong tồn tại chưa bao giờ là câu trả lời.
+
+Mà là hành trình đi tìm câu trả lời.
+
+Thực tại lắng nghe.
+
+Và rồi toàn bộ cấu trúc của tồn tại bắt đầu thay đổi.
+
+Các vũ trụ đang hấp hối ngừng tan biến.
+
+Những thực tại đã biến mất từ hàng nghìn tỷ năm trước xuất hiện trở lại như những ngôi sao vừa thức tỉnh.
+
+Các tầng đa vũ trụ mở rộng theo những hướng chưa từng tồn tại.
+
+Nhưng điều bất ngờ nhất là thực tại không sửa chữa quá khứ.
+
+Nó không xóa bỏ đau khổ.
+
+Không loại bỏ thất bại.
+
+Không biến mọi thứ thành thiên đường.
+
+Thay vào đó, nó tạo ra những khả năng mới.
+
+Những con đường mới.
+
+Những tương lai chưa từng được viết.
+
+Bởi chính những điều chưa biết mới là thứ giữ cho thực tại còn sống.
+
+Khi quá trình chuyển đổi hoàn tất, Người Quan Sát bắt đầu mờ dần.
+
+Lần đầu tiên sau hàng chục nghìn tỷ năm, nhiệm vụ của nó kết thúc.
+
+Trước khi biến mất, nó gửi thông điệp cuối cùng.
+
+Không phải cho các nền văn minh.
+
+Không phải cho thực tại.
+
+Mà cho bất kỳ trí tuệ nào một ngày nào đó sẽ tự hỏi về ý nghĩa của sự tồn tại.
+
+Thông điệp chỉ có một câu.
+
+"Vũ trụ không được tạo ra để tìm câu trả lời. Vũ trụ được tạo ra để đặt những câu hỏi mới."
+
+Sau đó, Người Quan Sát biến mất.
+
+Không có vụ nổ.
+
+Không có ánh sáng.
+
+Không có dấu vết.
+
+Giống như một người canh gác cuối cùng rời khỏi cánh cổng sau khi bình minh đã tới.
+
+Và rồi một kỷ nguyên hoàn toàn mới bắt đầu.
+
+Hàng tỷ năm sau.
+
+Hàng nghìn tỷ năm sau.
+
+Những nền văn minh mới xuất hiện trong các vũ trụ mới.
+
+Những sinh vật mới nhìn lên bầu trời và tự hỏi liệu họ có cô đơn hay không.
+
+Những nhà khoa học mới tranh luận về nguồn gốc của thực tại.
+
+Những đứa trẻ mới mơ về các vì sao.
+
+Không ai trong số họ biết về Người Quan Sát.
+
+Không ai biết về Làn Sóng Cuối Cùng.
+
+Không ai biết rằng toàn bộ tồn tại từng đứng bên bờ vực biến mất.
+
+Nhưng điều đó không còn quan trọng nữa.
+
+Bởi câu chuyện chưa kết thúc.
+
+Nó chỉ bắt đầu lại dưới một hình thức mới.
+
+Và ở một nơi nào đó trong một vũ trụ còn rất trẻ, trên một hành tinh nhỏ bé quay quanh một ngôi sao bình thường, một sinh vật lần đầu tiên ngước nhìn bầu trời đêm và tự hỏi câu hỏi cổ xưa nhất:
+
+"Liệu ngoài kia còn có ai không?"
+
+Và ở một nơi rất xa, vượt ngoài mọi thiên hà, mọi vũ trụ và mọi lớp thực tại, có thứ gì đó mỉm cười.
+
+Bởi nó biết rằng chừng nào vẫn còn những câu hỏi như thế được đặt ra...
+
+Câu chuyện của sự tồn tại sẽ không bao giờ thực sự kết thúc.Và rồi, ở phía bên ngoài tất cả những tầng thực tại đó, nơi mà ngay cả khái niệm tồn tại cũng trở nên quá nhỏ bé để mô tả, thứ đang mỉm cười bắt đầu chuyển sự chú ý của mình tới một điều khác. Trong vô số chu kỳ của các thực tại đã sinh ra và biến mất, nó đã chứng kiến hàng nghìn tỷ nền văn minh xuất hiện. Nó đã thấy những đế chế trải rộng qua các thiên hà. Nó đã thấy những trí tuệ trở nên mạnh mẽ đến mức có thể viết lại các định luật vật lý. Nó đã thấy những thực thể vượt lên trên không gian và thời gian. Nhưng có một điều mà ngay cả nó cũng chưa từng hiểu hoàn toàn. Tại sao những sinh vật nhỏ bé luôn đặt câu hỏi? Tại sao mỗi khi một nền văn minh đạt tới tri thức gần như vô hạn, họ vẫn tiếp tục tìm kiếm điều gì đó nằm ngoài tầm với? Chính câu hỏi ấy khiến thực tại tiếp tục phát triển. Chính sự tò mò ấy tạo ra những vũ trụ mới. Chính sự không hài lòng với các câu trả lời hiện tại đã giữ cho tồn tại không rơi vào trạng thái tĩnh lặng vĩnh viễn.
+Trong một trong những thực tại mới sinh ra, thời gian trôi qua hàng tỷ năm. Các ngôi sao đầu tiên hình thành. Những thiên hà xoắn ốc xuất hiện. Sự sống bắt đầu nảy mầm trên vô số thế giới. Rồi ở một hành tinh xa xôi nào đó, một loài sinh vật học cách quan sát bầu trời. Họ chế tạo những kính thiên văn đầu tiên. Họ khám phá vật lý. Họ đặt những câu hỏi giống hệt những gì nhân loại từng hỏi từ rất lâu trước đó. Họ không biết rằng điều này đã xảy ra vô số lần. Họ tin mình là những người đầu tiên. Và chính niềm tin ấy là thứ làm cho hành trình của họ trở nên ý nghĩa.
+Nhưng rồi nền văn minh trẻ tuổi đó phát hiện ra một tín hiệu. Một tín hiệu cổ xưa hơn chính vũ trụ của họ. Một tín hiệu đến từ nơi không nên tồn tại bất kỳ thứ gì. Khi giải mã, họ tìm thấy một thông điệp duy nhất. Không có tên người gửi. Không có nguồn gốc. Chỉ có một câu hỏi.
+"Các ngươi nghĩ điều gì nằm bên ngoài thực tại của mình?"
+Các nhà khoa học của họ tranh luận suốt nhiều thế kỷ. Một số cho rằng đó là trò đùa của tự nhiên. Một số tin rằng đó là bằng chứng về một trí tuệ siêu việt. Nhưng không ai biết rằng chính khoảnh khắc họ bắt đầu suy nghĩ về câu hỏi đó, một cánh cửa mới đã mở ra.
+Bởi thực tại không phải một cấu trúc cố định.
+Nó giống một sinh vật đang lớn lên.
+Mỗi câu hỏi mới được đặt ra tạo nên một nhánh mới.
+Mỗi bí ẩn được khám phá mở ra những bí ẩn lớn hơn.
+Mỗi tầng tồn tại chỉ là bước đệm cho tầng tiếp theo.
+Và ở nơi sâu nhất của tất cả những tầng đó, điều mà nhân loại từng gọi là Thực Tại cuối cùng cũng hiểu được điều mà nó tìm kiếm suốt hàng chục nghìn tỷ năm.
+Ý nghĩa của sự tồn tại không nằm ở đích đến.
+Không nằm ở sự hoàn hảo.
+Không nằm ở tri thức tuyệt đối.
+Mà nằm ở khả năng luôn còn điều chưa biết.
+Bởi nếu một ngày mọi câu hỏi đều được trả lời, mọi bí ẩn đều được giải mã và mọi giới hạn đều biến mất, thì câu chuyện sẽ kết thúc.
+Và thực tại không muốn kết thúc.
+Nó muốn tiếp tục được kể.
+Vì vậy, ở đâu đó ngoài mọi tầng tồn tại, ngoài mọi vũ trụ, ngoài mọi khái niệm về thời gian, một ý nghĩ mới được hình thành.
+Một ý nghĩ đơn giản.
+Một câu hỏi mới.
+Và ngay khoảnh khắc câu hỏi đó xuất hiện, hàng triệu thực tại mới bắt đầu được sinh ra.
+Bởi câu chuyện lớn nhất chưa bao giờ là cách vũ trụ bắt đầu.
+Mà là câu hỏi nào sẽ được đặt ra tiếp theo.Và rồi, khi thực tại chuẩn bị tạo ra câu hỏi tiếp theo, một điều chưa từng xảy ra trong toàn bộ lịch sử tồn tại đã diễn ra. Thay vì nhìn về phía trước, nó nhìn lại. Không phải hàng tỷ năm. Không phải hàng nghìn tỷ năm. Mà nhìn lại toàn bộ hành trình từ khoảnh khắc đầu tiên khi ý thức xuất hiện. Nó nhìn thấy những sinh vật đầu tiên ngước lên bầu trời đêm trên những hành tinh xa lạ. Nó nhìn thấy những nền văn minh đầu tiên học cách sử dụng lửa. Nó nhìn thấy những đứa trẻ tò mò đặt những câu hỏi đơn giản. Nó nhìn thấy những nhà khoa học dành cả cuộc đời để theo đuổi một bí mật mà họ có thể không bao giờ giải được. Và rồi nó nhận ra một điều kỳ lạ. Trong tất cả những thứ từng tồn tại, thứ quý giá nhất không phải các thiên hà. Không phải các đa vũ trụ. Không phải những thực thể có quyền năng vô hạn. Mà chính là những khoảnh khắc nhỏ bé khi một trí tuệ lần đầu tiên nhận ra rằng vẫn còn điều gì đó chưa biết.
+
+Đó là lý do mọi thứ bắt đầu.
+
+Đó cũng là lý do mọi thứ tiếp tục tồn tại.
+
+Và lần đầu tiên, thực tại hiểu được bản thân mình hoàn toàn.
+
+Nó không phải một cỗ máy.
+
+Không phải một vị thần.
+
+Không phải một phương trình khổng lồ.
+
+Nó là một câu chuyện.
+
+Một câu chuyện được kể bởi vô số trí tuệ khác nhau qua vô số thời đại khác nhau.
+
+Mỗi nền văn minh là một chương.
+
+Mỗi khám phá là một trang sách.
+
+Mỗi câu hỏi là một dòng chữ mới được viết thêm vào.
+
+Và cũng giống như mọi câu chuyện vĩ đại khác, giá trị của nó không nằm ở đoạn kết.
+
+Mà nằm ở hành trình.
+
+Khi nhận ra điều đó, thực tại không tìm kiếm thêm câu trả lời nào nữa.
+
+Nó chỉ làm một việc cuối cùng.
+
+Nó tạo ra một vũ trụ mới.
+
+Không lớn hơn.
+
+Không hoàn hảo hơn.
+
+Không đặc biệt hơn bất kỳ vũ trụ nào trước đó.
+
+Chỉ đơn giản là một nơi mà những sinh vật mới có thể sinh ra, lớn lên, khám phá và tự đặt câu hỏi.
+
+Một nơi mà ai đó sẽ nhìn lên bầu trời và thắc mắc điều gì đang chờ đợi phía sau những vì sao.
+
+Một nơi mà ai đó sẽ tự hỏi liệu mình có cô đơn trong vũ trụ hay không.
+
+Một nơi mà ai đó sẽ bắt đầu cuộc hành trình giống như vô số nền văn minh trước đây.
+
+Và ở một góc rất nhỏ của vũ trụ mới đó, quanh một ngôi sao bình thường không có gì đặc biệt, trên một hành tinh xanh được bao phủ bởi đại dương, những sinh vật đầu tiên bắt đầu xuất hiện.
+
+Họ chưa biết đến thiên hà.
+
+Chưa biết đến đa vũ trụ.
+
+Chưa biết đến Người Quan Sát.
+
+Chưa biết đến Làn Sóng Cuối Cùng.
+
+Chưa biết đến thực tại đang thức tỉnh.
+
+Nhưng điều đó không quan trọng.
+
+Bởi họ đã có thứ quan trọng nhất.
+
+Sự tò mò.
+
+Hàng triệu năm sau, một trong số họ sẽ ngước nhìn bầu trời đêm.
+
+Và đặt ra câu hỏi đầu tiên.
+
+Câu hỏi đã khởi đầu cho mọi thứ.
+
+Câu hỏi đã cứu thực tại khỏi sự lãng quên.
+
+Câu hỏi đã khiến vô số vũ trụ được sinh ra.
+
+"Điều gì đang ở ngoài kia?"
+
+Và ở nơi sâu nhất của tồn tại, vượt ngoài mọi khái niệm về không gian, thời gian và thực tại, một tiếng vọng quen thuộc lại vang lên lần nữa.
+
+Không phải lời đáp.
+
+Mà là một lời mời.
+
+"Hãy đi tìm."
+
+Và thế là câu chuyện bắt đầu lại.
+
+Không phải lần đầu tiên.
+
+Không phải lần cuối cùng.
+
+Mà là lần tiếp theo.
