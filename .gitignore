@@ -12,3 +12,5 @@ venv/
 .venv/
 .idea/
 .vscode/
+client_secrets.json
+token.pickle
