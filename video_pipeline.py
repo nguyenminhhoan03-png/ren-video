@@ -606,7 +606,12 @@ class VideoPipeline:
                 return clip_path
         except Exception:
             pass
-
+        finally:
+            try:
+                if raw_video.exists():
+                    raw_video.unlink()
+            except Exception:
+                pass
         return None
 
     def make_motion_clip(
@@ -737,13 +742,27 @@ class VideoPipeline:
 
         # Concatenate clips with crossfade transitions
         video_no_audio = self.render_dir / "video_no_audio.mp4"
-        self._concat_with_crossfade(clip_paths, video_no_audio, crossfade_duration=0.6)
+        try:
+            self._concat_with_crossfade(clip_paths, video_no_audio, crossfade_duration=0.6)
 
-        # Merge with voice audio (and optional background music)
-        final_output = self.output_dir / f"{self.config.project_name}.mp4"
-        self._merge_audio_video(video_no_audio, final_output, fast_render)
-
-        return final_output
+            # Merge with voice audio (and optional background music)
+            final_output = self.output_dir / f"{self.config.project_name}.mp4"
+            self._merge_audio_video(video_no_audio, final_output, fast_render)
+            return final_output
+        finally:
+            # Clean up video_no_audio.mp4
+            try:
+                if video_no_audio.exists():
+                    video_no_audio.unlink()
+            except Exception:
+                pass
+            # Clean up generated motion clips (those under self.render_dir / slide_*.mp4)
+            for path in clip_paths:
+                try:
+                    if path.exists() and path.parent == self.render_dir:
+                        path.unlink()
+                except Exception:
+                    pass
 
     def _concat_with_crossfade(
         self,
@@ -801,14 +820,29 @@ class VideoPipeline:
                 faded_clips.append(clip)
 
         concat_file = self.render_dir / "concat.txt"
-        concat_file.write_text(
-            "\n".join(f"file '{p.name}'" for p in faded_clips),
-            encoding="utf-8",
-        )
-        subprocess.run([
-            "ffmpeg", "-y", "-f", "concat", "-safe", "0",
-            "-i", concat_file.name, "-c", "copy", str(output_path.resolve()),
-        ], cwd=str(self.render_dir), check=True)
+        try:
+            concat_file.write_text(
+                "\n".join(f"file '{p.name}'" for p in faded_clips),
+                encoding="utf-8",
+            )
+            subprocess.run([
+                "ffmpeg", "-y", "-f", "concat", "-safe", "0",
+                "-i", concat_file.name, "-c", "copy", str(output_path.resolve()),
+            ], cwd=str(self.render_dir), check=True)
+        finally:
+            # Clean up faded transition clips
+            for path in faded_clips:
+                try:
+                    if path.exists() and "faded_" in path.name:
+                        path.unlink()
+                except Exception:
+                    pass
+            # Clean up concat manifest file
+            try:
+                if concat_file.exists():
+                    concat_file.unlink()
+            except Exception:
+                pass
 
     def _merge_audio_video(
         self,
