@@ -4,7 +4,7 @@ import subprocess
 import argparse
 from pathlib import Path
 import re
-from script_generator import generate_script
+from script_generator import generate_script, load_env
 
 def sanitize_filename(name):
     """Làm sạch tên file tương tự script_generator.py."""
@@ -12,6 +12,7 @@ def sanitize_filename(name):
     return name.replace(" ", "_").lower()
 
 def main():
+    load_env()
     parser = argparse.ArgumentParser(description="Pipeline tự động hoàn toàn: Tạo kịch bản -> Render video -> Tải lên YouTube")
     parser.add_argument("--idea", required=True, help="Ý tưởng hoặc chủ đề kịch bản (ví dụ: 'Truyện khoa học viễn tưởng robot nổi loạn')")
     parser.add_argument("--chapters", type=int, default=8, help="Số chương kịch bản muốn tạo (mặc định: 8, tương đương ~8000 từ)")

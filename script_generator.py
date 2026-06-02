@@ -138,7 +138,24 @@ def generate_script(idea, api_key, num_chapters=8, output_dir="scripts"):
     print(f"File lưu trữ tại: {output_path.resolve()}")
     return output_path
 
+def load_env():
+    """Tự động đọc file .env ở thư mục chạy nếu có và đưa vào os.environ."""
+    try:
+        from pathlib import Path
+        env_path = Path(".env")
+        if env_path.exists():
+            for line in env_path.read_text(encoding="utf-8").splitlines():
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                if "=" in line:
+                    k, v = line.split("=", 1)
+                    os.environ[k.strip()] = v.strip().strip("'\"")
+    except Exception:
+        pass
+
 if __name__ == "__main__":
+    load_env()
     parser = argparse.ArgumentParser(description="Tự động sinh kịch bản truyện dài bằng Gemini API")
     parser.add_argument("--idea", required=True, help="Ý tưởng câu chuyện của bạn")
     parser.add_argument("--chapters", type=int, default=8, help="Số chương muốn tạo (mặc định: 8)")
@@ -149,7 +166,7 @@ if __name__ == "__main__":
     api_key = os.environ.get("GEMINI_API_KEY", "")
     
     if not api_key:
-        print("[LỖI] Vui lòng thiết lập biến môi trường GEMINI_API_KEY trước khi chạy.")
+        print("[LỖI] Vui lòng thiết lập biến môi trường GEMINI_API_KEY hoặc tạo file .env trước khi chạy.")
         print("Cách thiết lập trên Windows (PowerShell): $env:GEMINI_API_KEY='your_key_here'")
         print("Cách thiết lập trên Linux/VPS: export GEMINI_API_KEY='your_key_here'")
     else:
