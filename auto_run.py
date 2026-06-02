@@ -17,11 +17,13 @@ def main():
     parser.add_argument("--idea", required=True, help="Ý tưởng hoặc chủ đề kịch bản (ví dụ: 'Truyện khoa học viễn tưởng robot nổi loạn')")
     parser.add_argument("--chapters", type=int, default=8, help="Số chương kịch bản muốn tạo (mặc định: 8, tương đương ~8000 từ)")
     parser.add_argument("--privacy", default="private", choices=["private", "public", "unlisted"], help="Trạng thái hiển thị video trên YouTube (mặc định: private)")
+    parser.add_argument("--split-parts", type=int, default=0, help="Chia nhỏ kịch bản thành N phần để render sequential nhằm tiết kiệm RAM/đĩa (mặc định: 0 - không chia)")
     
     args = parser.parse_args()
     idea = args.idea
     chapters = args.chapters
     privacy = args.privacy
+    split_parts = args.split_parts
 
     gemini_key = os.environ.get("GEMINI_API_KEY", "")
     if not gemini_key:
@@ -67,10 +69,13 @@ def main():
         "-v", f"{Path.cwd()}/output:/app/output",
         "video-renderer",
         "--script", f"/app/scripts/{script_path.name}",
-        "--output-dir", "/app/output",
+        "--output-dir", f"/app/output/{project_name}",
+        "--project-name", project_name,
         "--generate-voice",
         "--render-video"
     ]
+    if split_parts > 1:
+        docker_cmd.extend(["--split-parts", str(split_parts)])
     
     print(f"Đang chạy Docker: {' '.join(docker_cmd)}")
     try:

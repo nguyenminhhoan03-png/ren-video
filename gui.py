@@ -22,7 +22,7 @@ class App(tk.Tk):
         self.voice_path = tk.StringVar()
         self.music_path = tk.StringVar()
         self.output_dir = tk.StringVar(value=r"E:\Project_ItWebDev\Python\ren-video\output")
-        self.resolution = tk.StringVar(value="1920x1080")
+        self.resolution = tk.StringVar(value="1280x720")
         self.fps = tk.StringVar(value="30")
         self.auto_generate_voice = tk.BooleanVar(value=True)
         self.status = tk.StringVar(value="Sẵn sàng")

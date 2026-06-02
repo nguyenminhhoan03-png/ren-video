@@ -146,7 +146,7 @@ class ProjectConfig:
     script_path: Path
     voice_path: Path
     music_path: Optional[Path] = None
-    resolution: str = "1920x1080"
+    resolution: str = "1280x720"
     fps: int = 30
     chapter_seconds: int = 60
     pexels_api_key: str = ""
@@ -1374,7 +1374,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument("--script", required=True)
     parser.add_argument("--voice")
     parser.add_argument("--output-dir", default=r"E:\Project_ItWebDev\Python\ren-video\output")
-    parser.add_argument("--resolution", default="1920x1080")
+    parser.add_argument("--resolution", default="1280x720")
     parser.add_argument("--pexels-api-key", default="FmIsmwl6a3xuPdRiRlXwzioCXMjkX7PAEUfSJ1CStBPUosglp7rscxny", help="Pexels API key for stock video download")
     parser.add_argument("--generate-voice", action="store_true", help="Generate voice MP3 from script before building plan")
     parser.add_argument("--tts-voice", default="vi-VN-NamMinhNeural", help="Edge-TTS voice name")
@@ -1384,6 +1384,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument("--tts-no-cache", action="store_true", help="Disable cached generated voice reuse")
     parser.add_argument("--tts-no-polish", action="store_true", help="Skip voice audio polishing")
     parser.add_argument("--render-video", action="store_true", help="Render video with voice")
+    parser.add_argument("--split-parts", type=int, default=0, help="Split script into N parts, render sequentially, and concat them to save RAM/disk")
     return parser
 
 
@@ -1479,45 +1480,177 @@ def main() -> None:
                 print(f"Error processing script '{file.name}': {e}")
                 import traceback
                 traceback.print_exc()
-    else:
-        # Single file mode (original behavior)
-        voice_path = Path(args.voice) if args.voice else output_dir / "voice.mp3"
-        if args.generate_voice:
-            print(f"Generating voice to {voice_path} using voice '{args.tts_voice}' ...")
-            generate_voice_mp3(
-                script_path,
-                voice_path,
-                args.tts_voice,
-                rate=args.tts_rate,
-                workers=args.tts_workers,
-                max_chars=args.tts_chunk_size,
-                use_cache=not args.tts_no_cache,
-                polish=not args.tts_no_polish,
-            )
+        # Single file mode
+        if args.split_parts > 1:
+            print(f"Splitting script into {args.split_parts} parts for sequential rendering...")
+            temp_script_dir = output_dir / "temp_split_scripts"
+            temp_script_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Split the script
+            try:
+                text = script_path.read_text(encoding="utf-8")
+            except Exception as e:
+                print(f"Error reading script file {script_path}: {e}")
+                return
+                
+            paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
+            if not paragraphs:
+                paragraphs = [p.strip() for p in text.split("\n") if p.strip()]
+                
+            if len(paragraphs) < args.split_parts:
+                print(f"Warning: Script has only {len(paragraphs)} paragraphs, which is less than the requested {args.split_parts} parts. Reducing parts to {len(paragraphs)}.")
+                num_parts = len(paragraphs)
+            else:
+                num_parts = args.split_parts
+                
+            if num_parts <= 1:
+                part_paths = [script_path]
+            else:
+                paras_per_part = math.ceil(len(paragraphs) / num_parts)
+                part_paths = []
+                for i in range(num_parts):
+                    start = i * paras_per_part
+                    end = start + paras_per_part
+                    part_paras = paragraphs[start:end]
+                    if not part_paras:
+                        break
+                    part_text = "\n\n".join(part_paras)
+                    part_file = temp_script_dir / f"{script_path.name.replace('.txt', '')}_part_{i+1}.txt"
+                    part_file.write_text(part_text, encoding="utf-8")
+                    part_paths.append(part_file)
+            
+            rendered_videos = []
+            part_dirs = []
+            
+            for idx, part_file in enumerate(part_paths, start=1):
+                part_name = f"{args.project_name}_part_{idx}"
+                part_output_dir = output_dir / part_name
+                part_output_dir.mkdir(parents=True, exist_ok=True)
+                part_dirs.append(part_output_dir)
+                
+                part_voice_path = part_output_dir / "voice.mp3"
+                
+                print(f"\n==================================================")
+                print(f"Rendering Part {idx}/{len(part_paths)}: {part_name}")
+                print(f"==================================================")
+                
+                if args.generate_voice:
+                    print(f"Generating voice to {part_voice_path} using voice '{args.tts_voice}' ...")
+                    generate_voice_mp3(
+                        part_file,
+                        part_voice_path,
+                        args.tts_voice,
+                        rate=args.tts_rate,
+                        workers=args.tts_workers,
+                        max_chars=args.tts_chunk_size,
+                        use_cache=not args.tts_no_cache,
+                        polish=not args.tts_no_polish,
+                    )
+                
+                if not part_voice_path.exists():
+                    print(f"Error: Voice file not found for Part {idx}, aborting.")
+                    return
+                    
+                config = ProjectConfig(
+                    project_name=part_name,
+                    output_dir=part_output_dir,
+                    script_path=part_file,
+                    voice_path=part_voice_path,
+                    resolution=args.resolution,
+                    pexels_api_key=pexels_key,
+                )
+                pipeline = VideoPipeline(config)
+                plan = pipeline.generate_plan()
+                chapters = [pipeline.hydrate_chapter(ch) for ch in plan["chapters"]]
+                pipeline.export_chapter_markers(chapters)
+                pipeline.write_manifest(chapters)
+                slides = pipeline.generate_slides(chapters)
+                
+                if args.render_video:
+                    rendered_file = pipeline.render_video(chapters, slides)
+                    print(f"Rendered Part {idx} successfully: {rendered_file}")
+                    rendered_videos.append(rendered_file)
+                else:
+                    print(f"Generated assets for Part {idx} in {part_output_dir}")
+            
+            # Concat the rendered videos
+            if args.render_video and rendered_videos:
+                print(f"\n==================================================")
+                print(f"Concatenating {len(rendered_videos)} parts into final video...")
+                print(f"==================================================")
+                
+                concat_file = output_dir / "concat_list.txt"
+                with open(concat_file, "w", encoding="utf-8") as f:
+                    for video_path in rendered_videos:
+                        f.write(f"file '{video_path.absolute().as_posix()}'\n")
+                
+                final_video_path = output_dir / f"{args.project_name}.mp4"
+                
+                concat_cmd = [
+                    "ffmpeg", "-y",
+                    "-f", "concat",
+                    "-safe", "0",
+                    "-i", str(concat_file),
+                    "-c", "copy",
+                    str(final_video_path)
+                ]
+                
+                try:
+                    subprocess.run(concat_cmd, check=True)
+                    print(f"\n✓ SUCCESSFULLY CREATED COMBINED VIDEO: {final_video_path}")
+                    
+                    # Clean up temporary part directories to save disk space immediately!
+                    print("Cleaning up intermediate files to free disk space...")
+                    for p_dir in part_dirs:
+                        if p_dir.exists():
+                            shutil.rmtree(p_dir)
+                    if temp_script_dir.exists():
+                        shutil.rmtree(temp_script_dir)
+                    if concat_file.exists():
+                        concat_file.unlink()
+                    print("✓ Cleanup completed.")
+                except Exception as e:
+                    print(f"Error concatenating videos: {e}")
+            return
 
-        if not voice_path.exists():
-            raise FileNotFoundError(f"Voice file not found: {voice_path}")
-
-        config = ProjectConfig(
-            project_name=args.project_name,
-            output_dir=output_dir,
-            script_path=script_path,
-            voice_path=voice_path,
-            resolution=args.resolution,
-            pexels_api_key=pexels_key,
-        )
-        pipeline = VideoPipeline(config)
-        plan = pipeline.generate_plan()
-        chapters = [pipeline.hydrate_chapter(ch) for ch in plan["chapters"]]
-        pipeline.export_chapter_markers(chapters)
-        pipeline.write_manifest(chapters)
-        slides = pipeline.generate_slides(chapters)
-        if args.render_video:
-            final_video = pipeline.render_video(chapters, slides)
-            print(f"Rendered video: {final_video}")
         else:
-            print(f"Generated {len(slides)} scene assets in {output_dir}")
-            print(f"Voice narration ready at: {voice_path}")
+            voice_path = Path(args.voice) if args.voice else output_dir / "voice.mp3"
+            if args.generate_voice:
+                print(f"Generating voice to {voice_path} using voice '{args.tts_voice}' ...")
+                generate_voice_mp3(
+                    script_path,
+                    voice_path,
+                    args.tts_voice,
+                    rate=args.tts_rate,
+                    workers=args.tts_workers,
+                    max_chars=args.tts_chunk_size,
+                    use_cache=not args.tts_no_cache,
+                    polish=not args.tts_no_polish,
+                )
+
+            if not voice_path.exists():
+                raise FileNotFoundError(f"Voice file not found: {voice_path}")
+
+            config = ProjectConfig(
+                project_name=args.project_name,
+                output_dir=output_dir,
+                script_path=script_path,
+                voice_path=voice_path,
+                resolution=args.resolution,
+                pexels_api_key=pexels_key,
+            )
+            pipeline = VideoPipeline(config)
+            plan = pipeline.generate_plan()
+            chapters = [pipeline.hydrate_chapter(ch) for ch in plan["chapters"]]
+            pipeline.export_chapter_markers(chapters)
+            pipeline.write_manifest(chapters)
+            slides = pipeline.generate_slides(chapters)
+            if args.render_video:
+                final_video = pipeline.render_video(chapters, slides)
+                print(f"Rendered video: {final_video}")
+            else:
+                print(f"Generated {len(slides)} scene assets in {output_dir}")
+                print(f"Voice narration ready at: {voice_path}")
 
 
 if __name__ == "__main__":
