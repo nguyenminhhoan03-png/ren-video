@@ -88,18 +88,20 @@ def upload_video(video_path, title, description, category_id="22", privacy_statu
     return response['id']
 
 if __name__ == "__main__":
-    # Test thử trực tiếp
-    # Chú ý: Đảm bảo bạn đã có file 'client_secrets.json' trong cùng thư mục
-    import sys
-    if len(sys.argv) < 2:
-        print("Cách dùng test: python youtube_uploader.py <đường_dẫn_video>")
-    else:
-        try:
-            upload_video(
-                video_path=sys.argv[1],
-                title="Test Video Render Pipeline",
-                description="Video được tự động render và upload bởi tool của hoannm.",
-                privacy_status="private" # Đăng ở dạng riêng tư trước để check
-            )
-        except Exception as e:
-            print(f"\n[LỖI] {e}")
+    import argparse
+    parser = argparse.ArgumentParser(description="Upload video lên YouTube")
+    parser.add_argument("video_path", help="Đường dẫn đến file video .mp4")
+    parser.add_argument("--title", default="Video Render Tự Động", help="Tiêu đề video trên YouTube")
+    parser.add_argument("--description", default="Video được tự động tạo và tải lên bởi hệ thống.", help="Mô tả video")
+    parser.add_argument("--privacy", default="private", choices=["private", "public", "unlisted"], help="Trạng thái hiển thị (mặc định: private)")
+    
+    args = parser.parse_args()
+    try:
+        upload_video(
+            video_path=args.video_path,
+            title=args.title,
+            description=args.description,
+            privacy_status=args.privacy
+        )
+    except Exception as e:
+        print(f"\n[LỖI] {e}")
