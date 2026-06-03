@@ -28,11 +28,15 @@ def main():
         output_dir.mkdir(parents=True, exist_ok=True)
         video_path = output_dir / f"{name}.mp4"
         
-        # 1. Chạy render video
+        # 1. Chạy render video bằng Docker
         pipeline_cmd = [
-            sys.executable, "video_pipeline.py",
-            "--script", str(script_path),
-            "--output-dir", str(output_dir),
+            "docker", "run", "--rm",
+            "-e", "PYTHONUNBUFFERED=1",
+            "-v", f"{Path.cwd()}/scripts:/app/scripts",
+            "-v", f"{Path.cwd()}/output:/app/output",
+            "video-renderer",
+            "--script", f"/app/scripts/{script_path.name}",
+            "--output-dir", f"/app/output/{name}",
             "--project-name", name,
             "--generate-voice",
             "--render-video"
