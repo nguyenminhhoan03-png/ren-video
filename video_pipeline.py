@@ -18,6 +18,25 @@ import requests
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
+def load_env() -> None:
+    try:
+        env_path = Path(".env")
+        if env_path.exists():
+            for line in env_path.read_text(encoding="utf-8").splitlines():
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                if "=" in line:
+                    k, v = line.split("=", 1)
+                    os.environ[k.strip()] = v.strip().strip("'\"")
+    except Exception:
+        pass
+
+load_env()
+
+FFMPEG_CMD = os.environ.get("FFMPEG_PATH", "ffmpeg")
+FFPROBE_CMD = os.environ.get("FFPROBE_PATH", "ffprobe")
+
 
 # ---------------------------------------------------------------------------
 # Vietnamese → English keyword dictionary for stock video search
@@ -561,7 +580,7 @@ class VideoPipeline:
 
         # Get source video duration
         probe_cmd = [
-            "ffprobe", "-v", "quiet",
+            FFPROBE_CMD, "-v", "quiet",
             "-print_format", "json",
             "-show_format",
             str(raw_video),
@@ -587,7 +606,7 @@ class VideoPipeline:
         vf = ",".join(vf_parts)
 
         cmd = [
-            "ffmpeg", "-y",
+            FFMPEG_CMD, "-y",
             "-ss", f"{start_offset:.3f}",
             "-i", str(raw_video),
             "-t", f"{duration:.3f}",
@@ -650,7 +669,7 @@ class VideoPipeline:
         vf_parts.append("format=yuv420p")
         vf = ",".join(vf_parts)
         cmd = [
-            "ffmpeg", "-y",
+            FFMPEG_CMD, "-y",
             "-loop", "1",
             "-i", str(image_path),
             "-t", f"{duration:.3f}",
@@ -773,7 +792,7 @@ class VideoPipeline:
         """Concatenate video clips with crossfade transitions using xfade filter."""
         if len(clip_paths) == 1:
             # Single clip, just copy
-            subprocess.run(["ffmpeg", "-y", "-i", str(clip_paths[0]), "-c", "copy", str(output_path)], check=True)
+            subprocess.run([FFMPEG_CMD, "-y", "-i", str(clip_paths[0]), "-c", "copy", str(output_path)], check=True)
             return
 
         if len(clip_paths) == 2:
@@ -781,7 +800,7 @@ class VideoPipeline:
             dur0 = self._get_video_duration(clip_paths[0])
             offset = max(0, dur0 - crossfade_duration)
             cmd = [
-                "ffmpeg", "-y",
+                FFMPEG_CMD, "-y",
                 "-i", str(clip_paths[0]),
                 "-i", str(clip_paths[1]),
                 "-filter_complex",
@@ -806,7 +825,7 @@ class VideoPipeline:
 
             vf = f"fade=t=in:st=0:d={fade_d},fade=t=out:st={max(0, dur - fade_d):.3f}:d={fade_d},format=yuv420p"
             cmd = [
-                "ffmpeg", "-y",
+                FFMPEG_CMD, "-y",
                 "-i", str(clip),
                 "-vf", vf,
                 "-c:v", "libx264", "-preset", "fast", "-crf", "21",
@@ -826,7 +845,7 @@ class VideoPipeline:
                 encoding="utf-8",
             )
             subprocess.run([
-                "ffmpeg", "-y", "-f", "concat", "-safe", "0",
+                FFMPEG_CMD, "-y", "-f", "concat", "-safe", "0",
                 "-i", concat_file.name, "-c", "copy", str(output_path.resolve()),
             ], cwd=str(self.render_dir), check=True)
         finally:
@@ -863,7 +882,7 @@ class VideoPipeline:
                 f"[voice][music]amix=inputs=2:duration=shortest:dropout_transition=3[aout]"
             )
             cmd = [
-                "ffmpeg", "-y",
+                FFMPEG_CMD, "-y",
                 "-i", str(video_path),
                 "-i", str(voice_path),
                 "-i", str(music_path),
@@ -881,7 +900,7 @@ class VideoPipeline:
             # Voice only
             if fast_render:
                 cmd = [
-                    "ffmpeg", "-y",
+                    FFMPEG_CMD, "-y",
                     "-i", str(video_path),
                     "-i", str(voice_path),
                     "-c:v", "copy",
@@ -891,7 +910,7 @@ class VideoPipeline:
                 ]
             else:
                 cmd = [
-                    "ffmpeg", "-y",
+                    FFMPEG_CMD, "-y",
                     "-i", str(video_path),
                     "-i", str(voice_path),
                     "-map", "0:v",
@@ -910,7 +929,7 @@ class VideoPipeline:
         """Get duration of a video file using ffprobe."""
         try:
             result = subprocess.run([
-                "ffprobe", "-v", "quiet",
+                FFPROBE_CMD, "-v", "quiet",
                 "-print_format", "json",
                 "-show_format",
                 str(video_path),
@@ -1253,7 +1272,7 @@ def _apply_voice_polish(input_mp3: Path, output_mp3: Path) -> None:
         "loudnorm=I=-16:TP=-1.5:LRA=11"
     )
     subprocess.run([
-        "ffmpeg", "-y",
+        FFMPEG_CMD, "-y",
         "-i", str(input_mp3),
         "-af", filter_chain,
         "-codec:a", "libmp3lame",
@@ -1345,7 +1364,7 @@ def generate_voice_mp3(
         concat_file = temp_dir / "concat.txt"
         concat_file.write_text("\n".join(f"file '{p.name}'" for p in generated_files), encoding="utf-8")
         subprocess.run([
-            "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", concat_file.name, "-c", "copy", str(output_mp3.resolve())
+            FFMPEG_CMD, "-y", "-f", "concat", "-safe", "0", "-i", concat_file.name, "-c", "copy", str(output_mp3.resolve())
         ], cwd=str(temp_dir), check=True)
         if not output_mp3.exists() or output_mp3.stat().st_size == 0:
             raise RuntimeError("Failed to merge TTS chunks into output voice file")
@@ -1588,7 +1607,7 @@ def main() -> None:
                 final_video_path = output_dir / f"{args.project_name}.mp4"
                 
                 concat_cmd = [
-                    "ffmpeg", "-y",
+                    FFMPEG_CMD, "-y",
                     "-f", "concat",
                     "-safe", "0",
                     "-i", str(concat_file),
@@ -1610,6 +1629,14 @@ def main() -> None:
                     if concat_file.exists():
                         concat_file.unlink()
                     print("✓ Cleanup completed.")
+                    # Move script to done folder
+                    try:
+                        done_dir = script_path.parent / "done"
+                        done_dir.mkdir(exist_ok=True)
+                        shutil.move(str(script_path), str(done_dir / script_path.name))
+                        print(f"Moved script '{script_path.name}' to '{done_dir.name}/'")
+                    except Exception as e:
+                        print(f"Failed to move '{script_path.name}' to done: {e}")
                 except Exception as e:
                     print(f"Error concatenating videos: {e}")
             return
@@ -1649,6 +1676,15 @@ def main() -> None:
             if args.render_video:
                 final_video = pipeline.render_video(chapters, slides)
                 print(f"Rendered video: {final_video}")
+                # Move script to done folder
+                try:
+                    done_dir = script_path.parent / "done"
+                    done_dir.mkdir(exist_ok=True)
+                    import shutil
+                    shutil.move(str(script_path), str(done_dir / script_path.name))
+                    print(f"Moved script '{script_path.name}' to '{done_dir.name}/'")
+                except Exception as e:
+                    print(f"Failed to move '{script_path.name}' to done: {e}")
             else:
                 print(f"Generated {len(slides)} scene assets in {output_dir}")
                 print(f"Voice narration ready at: {voice_path}")
