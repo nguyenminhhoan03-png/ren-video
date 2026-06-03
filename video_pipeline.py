@@ -1480,6 +1480,7 @@ def main() -> None:
                 print(f"Error processing script '{file.name}': {e}")
                 import traceback
                 traceback.print_exc()
+    else:
         # Single file mode
         if args.split_parts > 1:
             print(f"Splitting script into {args.split_parts} parts for sequential rendering...")
