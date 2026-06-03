@@ -28,11 +28,15 @@ def main():
         output_dir.mkdir(parents=True, exist_ok=True)
         video_path = output_dir / f"{name}.mp4"
         
-        # 1. Chạy render video
+        # 1. Chạy render video bằng Docker
         pipeline_cmd = [
-            sys.executable, "video_pipeline.py",
-            "--script", str(script_path),
-            "--output-dir", str(output_dir),
+            "docker", "run", "--rm",
+            "-e", "PYTHONUNBUFFERED=1",
+            "-v", f"{Path.cwd()}/scripts:/app/scripts",
+            "-v", f"{Path.cwd()}/output:/app/output",
+            "video-renderer",
+            "--script", f"/app/scripts/{script_path.name}",
+            "--output-dir", f"/app/output/{name}",
             "--project-name", name,
             "--generate-voice",
             "--render-video"
@@ -59,9 +63,22 @@ def main():
         except Exception:
             pass
             
+        description = f"Video truyện kể '{title}' được tự động render và tải lên bởi hệ thống."
+        
+        # Gọi Gemini tự động sinh SEO Title & Description nếu có API Key
+        from script_generator import load_env, generate_youtube_metadata
+        load_env()
+        gemini_key = os.environ.get("GEMINI_API_KEY", "")
+        if gemini_key:
+            print("-> Đang gọi Gemini tự động tối ưu tiêu đề và mô tả chuẩn SEO...")
+            seo_title, seo_desc = generate_youtube_metadata(script_path, gemini_key)
+            if seo_title and seo_desc:
+                title = seo_title
+                description = seo_desc
+                print(f"   [SEO Title]: {title}")
+
         # 2. Upload video lên YouTube
         print(f"-> Đang tải video lên YouTube...")
-        description = f"Video truyện kể '{title}' được tự động render và tải lên bởi hệ thống."
         upload_cmd = [
             sys.executable, "youtube_uploader.py",
             str(video_path),

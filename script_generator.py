@@ -138,6 +138,44 @@ def generate_script(idea, api_key, num_chapters=8, output_dir="scripts"):
     print(f"File lưu trữ tại: {output_path.resolve()}")
     return output_path
 
+def generate_youtube_metadata(script_path, api_key):
+    """Sử dụng Gemini để tự động tạo Tiêu đề và Mô tả tối ưu SEO từ nội dung kịch bản."""
+    try:
+        with open(script_path, "r", encoding="utf-8") as f:
+            content = f.read()
+        
+        # Lấy một phần nội dung kịch bản làm dữ liệu đầu vào cho Gemini phân tích
+        sample = content[:4000]
+        
+        client = genai.Client(api_key=api_key)
+        
+        prompt = f"""
+        Bạn là chuyên gia marketing và tối ưu hóa SEO YouTube. Dưới đây là nội dung kịch bản câu chuyện của video:
+        ---
+        {sample}
+        ---
+        Hãy tạo ra một tiêu đề video kích thích người xem click (High CTR) dưới 70 ký tự và một mô tả chi tiết chuẩn SEO (tóm tắt cốt truyện kịch tính khoảng 150-200 từ, kèm theo các hashtag thích hợp ở cuối).
+        Trả về dưới dạng JSON nguyên bản, không dùng khối mã markdown hay ```json:
+        {{
+          "title": "Tiêu đề giật gân, cuốn hút ở đây",
+          "description": "Mô tả chuẩn SEO chi tiết kèm hashtag ở đây"
+        }}
+        """
+        
+        response = generate_content_with_retry(
+            client=client,
+            model='gemini-2.5-flash',
+            contents=prompt
+        )
+        text = response.text.strip()
+        # Lọc sạch markdown nếu có
+        text = re.sub(r"^```json\s*|```$", "", text, flags=re.M).strip()
+        data = json.loads(text)
+        return data.get("title", ""), data.get("description", "")
+    except Exception as e:
+        print(f"  [Cảnh báo] Lỗi sinh SEO metadata từ Gemini: {e}")
+        return None, None
+
 def load_env():
     """Tự động đọc file .env ở thư mục chạy nếu có và đưa vào os.environ."""
     try:

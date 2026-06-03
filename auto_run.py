@@ -4,7 +4,7 @@ import subprocess
 import argparse
 from pathlib import Path
 import re
-from script_generator import generate_script, load_env
+from script_generator import generate_script, load_env, generate_youtube_metadata
 
 def sanitize_filename(name):
     """Làm sạch tên file tương tự script_generator.py."""
@@ -94,11 +94,21 @@ def main():
     print(f"BƯỚC 3: Tải video lên YouTube")
     print(f"==============================================")
     
+    title = story_title
     description = f"Video câu chuyện '{story_title}' được tự động viết kịch bản bởi Gemini, render và tải lên bởi hệ thống AI tự động."
+    
+    if gemini_key:
+        print("-> Đang gọi Gemini tự động tối ưu tiêu đề và mô tả chuẩn SEO...")
+        seo_title, seo_desc = generate_youtube_metadata(script_path, gemini_key)
+        if seo_title and seo_desc:
+            title = seo_title
+            description = seo_desc
+            print(f"   [SEO Title]: {title}")
+
     upload_cmd = [
         sys.executable, "youtube_uploader.py", 
         str(video_path),
-        "--title", story_title,
+        "--title", title,
         "--description", description,
         "--privacy", privacy
     ]

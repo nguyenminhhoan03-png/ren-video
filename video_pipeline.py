@@ -272,10 +272,22 @@ class VideoPipeline:
 
     def normalize_script(self, text: str) -> str:
         text = text.replace("\r\n", "\n")
+        
+        # Tự động loại bỏ các dòng tiêu đề (#) hoặc tiêu đề chương (Chương/Chapter)
+        lines = text.split("\n")
+        filtered_lines = []
+        for line in lines:
+            line_strip = line.strip()
+            if line_strip.startswith("#") or line_strip.lower().startswith("chương") or line_strip.lower().startswith("chapter"):
+                continue
+            filtered_lines.append(line)
+        text = "\n".join(filtered_lines)
+
         text = re.sub(r"^[\-•*\d\.\)\s]+", "", text, flags=re.M)
         text = re.sub(r"\n{3,}", "\n\n", text)
         text = re.sub(r"[ \t]+", " ", text)
         return text.strip()
+
 
     # ----- keyword / prompt helpers -----
 
