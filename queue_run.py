@@ -76,28 +76,50 @@ def main():
         except Exception as e:
             print(f"  [Cảnh báo] Không đọc được tiêu đề kịch bản: {e}")
 
-        # 2. Chạy Docker render video
-        print("\n-> Bước 2: Chạy Docker render video...")
-        docker_cmd = [
-            "docker", "run", "--rm",
-            "-e", "PYTHONUNBUFFERED=1",
-            "-v", f"{Path.cwd()}/scripts:/app/scripts",
-            "-v", f"{Path.cwd()}/output:/app/output",
-            "video-renderer",
-            "--script", f"/app/scripts/{script_path.name}",
-            "--output-dir", f"/app/output/{project_name}",
-            "--project-name", project_name,
-            "--generate-voice",
-            "--render-video"
-        ]
-        if split_parts > 1:
-            docker_cmd.extend(["--split-parts", str(split_parts)])
-
-        try:
-            subprocess.run(docker_cmd, check=True)
-        except subprocess.CalledProcessError as e:
-            print(f"[LỖI] Render video thất bại: {e}. Chuyển sang ý tưởng tiếp theo.")
-            continue
+        # 2. Chạy render video (Chạy trực tiếp nếu đang trong container Docker, ngược lại gọi Docker)
+        print("\n-> Bước 2: Chạy render video...")
+        if os.environ.get("RUNNING_IN_DOCKER") == "1":
+            # Chạy trực tiếp qua python3 thay vì gọi Docker lồng nhau
+            render_cmd = [
+                sys.executable, "video_pipeline.py",
+                "--script", str(script_path),
+                "--output-dir", str(Path("output") / project_name),
+                "--project-name", project_name,
+                "--generate-voice",
+                "--render-video"
+            ]
+            if split_parts > 1:
+                render_cmd.extend(["--split-parts", str(split_parts)])
+            
+            print(f"  [Docker Mode] Đang chạy trực tiếp: {' '.join(render_cmd)}")
+            try:
+                subprocess.run(render_cmd, check=True)
+            except subprocess.CalledProcessError as e:
+                print(f"[LỖI] Render video trực tiếp thất bại: {e}. Chuyển sang ý tưởng tiếp theo.")
+                continue
+        else:
+            # Chạy qua lệnh docker trên host
+            docker_cmd = [
+                "docker", "run", "--rm",
+                "-e", "PYTHONUNBUFFERED=1",
+                "-v", f"{Path.cwd()}/scripts:/app/scripts",
+                "-v", f"{Path.cwd()}/output:/app/output",
+                "video-renderer",
+                "--script", f"/app/scripts/{script_path.name}",
+                "--output-dir", f"/app/output/{project_name}",
+                "--project-name", project_name,
+                "--generate-voice",
+                "--render-video"
+            ]
+            if split_parts > 1:
+                docker_cmd.extend(["--split-parts", str(split_parts)])
+            
+            print(f"  [Host Mode] Đang chạy qua Docker: {' '.join(docker_cmd)}")
+            try:
+                subprocess.run(docker_cmd, check=True)
+            except subprocess.CalledProcessError as e:
+                print(f"[LỖI] Render video qua Docker thất bại: {e}. Chuyển sang ý tưởng tiếp theo.")
+                continue
 
         # 3. Tải video lên YouTube
         video_path = Path("output") / project_name / f"{project_name}.mp4"
